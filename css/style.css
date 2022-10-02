@@ -1,274 +1,153 @@
-/* reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
-    /* --- ESTILOS DE INDEX.HTML --- */
+@charset "UTF-8";
 /* propiedades del contenedor padre */
-.contenedor{
-    display: grid;
-    height: 100vh;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:repeat(3,1fr) ;
-    font-family:'Merriweather', serif;
-    
-/* grid template areas*/
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
+body {
+  overflow-x: hidden; }
 
-header{
-    grid-area: header;
-    position: sticky;
-    top: 0;
-    background-color: #f4f4f4;
-    z-index:100;
-}
-/* estilo del header padre flex */
-.padre-flex{
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3, 1fr 2fr 1fr;
+  font-family: 'Merriweather', serif;
+  /* grid template areas*/
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
+  /* estilo del header padre flex */
+  /* estilo del logo */
+  /* estilo titulo empresa */
+  /* estilo link contacto*/ }
+  header div .logoTitulo {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    align-items: center; }
+  header .padre-flex {
     display: flex;
     flex-flow: nowrap;
     flex-direction: row;
-    align-items: flex-end;
-}
-/* estilo del logo */
-.encabezadologo img{
+    align-items: center; }
+  header div div .logoEncabezado a img {
+    width: 80%;
+    margin-bottom: 5px;
+    margin-left: 1rem; }
+  header div div .tituloEncabezado h1 a {
+    text-decoration: none;
+    list-style: none;
+    color: #002B5B;
+    font-size: 25pt;
+    flex-flow: nowrap;
     display: flex;
-    width: 30%;
-}
-/* estilo titulo empresa */
-.tituloEncabezado a{
+    margin-top: 10px;
+    margin-left: 10px; }
+  header div section .menu-hamburguesa {
+    margin-left: 3rem; }
+  header div section .menu-hamburguesa div h2 {
+    font-size: 13pt; }
+  header div .cajaContacto {
+    display: flex;
+    align-self: end;
+    justify-content: flex-end; }
+  header div .cajaContacto h2 a {
     text-decoration: none;
     list-style: none;
-    color: #002B5B;
-    font-size: 40pt;
-}
-.tituloEncabezado{
-    align-items: bottom;
-}
-/* estilo link contacto*/
-.contactoEncabezado a{
-    text-decoration: none;
-    list-style: none;
-    color: #002B5B;
-    font-size: 20pt
-}
-/* forzar estilo de bootstrap*/
-.menu-hamburguesa{
-    background-image: linear-gradient(to right, #2678ca, #11385f);
-}
-
-
-
+    font-size: 13pt; }
 
 /* estilos del main*/
-main{
-    grid-area: main;
-}
-/* estimlo tamañp Banner principal imagen central */
-.image-container{
+main {
+  grid-area: main;
+  /* estilo tamaño Banner principal imagen central */ }
+  main .social ul li a .icon-redes {
+    width: 18%;
+    margin-top: 10px; }
+  main .contenedorAnimado {
+    width: 1600px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-bottom: 2rem;
+    text-shadow: black 6px 6px 2px; }
+  main .contenedorAnimado h3 {
+    font-size: 60pt;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color: white; }
+  main .contenedorAnimado h3 ul {
+    list-style: none;
+    padding-left: 10px;
+    margin: 0;
+    font-size: 50pt;
+    animation: cambiar 10s infinite;
+    line-height: 90px; }
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0; }
+  24% {
+    margin-top: 0; }
+  25% {
+    margin-top: -90px; }
+  49% {
+    margin-top: -90px; }
+  50% {
+    margin-top: -180px; }
+  74% {
+    margin-top: -180px; }
+  75% {
+    margin-top: -270px; }
+  95% {
+    margin-top: -270px; }
+  96% {
+    margin-top: 0; }
+  100% {
+    margin-top: 0; } }
+  main .image-container {
     width: 100%;
-    height: 100%;
-}
-
-
-
+    height: 100%; }
+  main .social ul {
+    position: fixed;
+    padding-top: 15rem;
+    padding-left: 0.5rem; }
+  main .social ul li {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0.2rem; }
 
 /*estilos del footer*/
-footer{
-    grid-area: footer;
-}
-.flex-container{
-    background-image: linear-gradient(to right, #2678ca, #11385f);
+footer {
+  grid-area: footer;
+  background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
+  text-align: center;
+  /*edicion del copyricht */
+  /* estilo y posicion imagen flotante Whatsapp */ }
+  footer .flex-container {
     display: flex;
     flex-flow: nowrap;
-    flex-direction: row;
-}
-/* estilo y posicion imagen flotante Whatsapp */
-.logoWhatsapp{
-    position: fixed;
-    top: 52rem; right: 1rem;
-    width: 5%;
-}
-/* logo redes sociales */
-.logoRedes{
-    margin-top: -3rem;
-    width: 15%;
-    margin-left: 1rem;
-}
-/*edicion del copyricht */
-.copyPrincipal{    
+    flex-direction: row; }
+  footer section .copyPrincipal .tamanoCopy {
     color: white;
-    text-align: center;
-    margin-top: 1rem;
-}
-.tamanoCopy{
-    font-size: 20pt;
-}
+    font-size: 20pt; }
+  footer section div .logoWhatsapp {
+    position: fixed;
+    top: 50rem;
+    right: 0.7rem;
+    width: 4%; }
 
-
-
-/* --- ESTILOS DE INTRO_SERVCIOS.HTML --- */
-/* estilos de las tarjetas */
-.tarjetas{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    height: 100vh;
-    flex-wrap: wrap;
-}
-.card{
-    display: flex;
-    width: 100%;
-    border: solid 1px white;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    text-align: center;
-}
-.mainTarjetas{
-    background-image: url();
-    background-color: #11385f;
-}
-
-.btn-whatsapp-mobile {
-    display: none;
-}
-.btn-whatsapp-desktop {
-    display: block;
-}
-
-/* --- VAINAS MOBILE --- */
-@media (max-width:576px)  {
-    .tituloEncabezado {
-        display: none;
-    }
-    footer {
-        bottom: 0;
-        position: fixed;
-    }
-    .contenedor{
-        height: none;
-    }
-    .btn-whatsapp-mobile {
-        display: block;
-    }
-    .btn-whatsapp-desktop {
-        display: none;
-    }
-    .logoRedes {
-        width: 20%;
-        margin-left: 1rem;
-        display: inline-block;
-    }
-    .flex-container {
-        flex-flow: wrap;
-    }
-    h3.tamanoCopy {
-        font-size: 10px;
-    }
-    .image-container {
-        min-height: 700px;
-    }
-    .image-container img {
-        object-fit: cover;
-        height: 943px;
-    }
-    .navbar-toggler-icon {
-        filter: brightness(0) invert(1);
-    }
-}
-@media (max-width:576px)  {
-    .tituloEncabezado {
-        display: none;
-    }
-    footer {
-        bottom: 0;
-        position: fixed;
-    }
-    .contenedor{
-        height: none;
-    }
-    .btn-whatsapp-mobile {
-        display: block;
-    }
-    .btn-whatsapp-desktop {
-        display: none;
-    }
-    .logoRedes {
-        width: 20%;
-        margin-left: 1rem;
-        display: inline-block;
-    }
-    .flex-container {
-        flex-flow: wrap;
-    }
-    h3.tamanoCopy {
-        font-size: 10px;
-    }
-    .image-container {
-        min-height: 700px;
-    }
-    .image-container img {
-        object-fit: cover;
-        height: 943px;
-    }
-    .navbar-toggler-icon {
-        filter: brightness(0) invert(1);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- PRESENTACION.HTML --- */
-/* Posicionamiento Imagenes y video */
-.imgSolucionando{
-    margin-left: 1275px;
-}
-.videoPresentacion{
-    position: absolute;
-    left: 500px; top: 300px;
-}
-/* Team JRL */
-.teamTitulo{
-    text-align: center;
-    color: #002B5B;
-    font-size: 30pt;
-    font-family:'Merriweather', serif;
-}
-/* Edicion de texto momentaneo team JRL */
-.conceptoEquipo{
-    text-align: center;
-    height: 100px; width: 1000px;
-    line-height: 1.6;
-    box-sizing:border-box;
-    border: #002B5B 2px solid;
-    margin-left: 600px;
-}
-/* posicion de foto del team jrl*/
-.imgTeam{
-    margin-left: 600px;
-}
-/* --- SERVICIOS.HTML --- */
-/* tamaño y ordenamiendo de imagenes */
-.imgConsultoriaP{
-    height: 400px; width: 400px;
-}
-.imgInnovacionP{
-    height: 400px; width: 400px;
-    margin-left: 1350px;
-}
-.imgMarketingP{
-    height: 400px; width: 400px;
-}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
