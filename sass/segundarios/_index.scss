@@ -1,25 +1,12 @@
-/* propiedades del contenedor padre */
-body{
-    overflow-x: hidden;
-}
-.contenedor{
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:(3, 1fr 2fr 1fr) ;
-    font-family:'Merriweather', serif;
-    /* grid template areas*/
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
+@import "variables";
+
+//nesting//
 header{
     grid-area: header;
     position: sticky;
     top: 0;
     z-index:100;
-    background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
-
+    background-image:linear-gradient($color-header);
     div .logoTitulo{
         display: flex;
         flex-direction: row;
@@ -44,7 +31,7 @@ header{
     div div .tituloEncabezado h1 a{
         text-decoration: none;
         list-style: none;
-        color: #002B5B;
+        color:#002B5B;
         font-size: 25pt;
         flex-flow: nowrap;
         display: flex;
@@ -73,82 +60,77 @@ header{
 /* estilos del main*/
 main{
     grid-area: main;
-    .social ul li a .icon-redes{
-        width: 18%;
-        margin-top: 10px; 
-    }
-    .contenedorAnimado{
-        width: 1600px;
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        overflow: hidden;
-        border-radius: 15px;
-        padding-bottom: 2rem;
-        text-shadow: black 6px 6px 2px;
-    }
-    .contenedorAnimado h3{
-        font-size: 60pt;
-        margin: 0;
-        display: flex;
-        flex-direction: row; 
-        color: white;
-    }
-    .contenedorAnimado h3 ul{
-        list-style: none;
-        padding-left: 10px;
-        margin: 0;
-        font-size: 50pt;
-        animation: cambiar 10s infinite;
-        line-height: 90px;
-    }
-    @keyframes cambiar {
-        0%{ margin-top:0;}
-        24%{ margin-top:0;}
+        .social ul li a .icon-redes{
+            width: 18%;
+            margin-top: 10px; 
+        }
+        .contenedorAnimado{
+            width: 1600px;
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            padding-bottom: 2rem;
+            text-shadow: black 6px 6px 2px;
+        }
+        .contenedorAnimado h3{
+            font-size: 60pt;
+            margin: 0;
+            display: flex;
+            flex-direction: row; 
+            color: white;
+        }
+        .contenedorAnimado h3 ul{
+            list-style: none;
+            padding-left: 10px;
+            margin: 0;
+            font-size: 50pt;
+            animation: cambiar 10s infinite;
+            line-height: 90px;
+        }
+        @keyframes cambiar {
+            0%{ margin-top:0;}
+            24%{ margin-top:0;}
 
-        25%{ margin-top: -90px;}
-        49%{ margin-top: -90px;}
+            25%{ margin-top: -90px;}
+            49%{ margin-top: -90px;}
 
-        50%{ margin-top: -180px;}
-        74%{ margin-top: -180px;}
+            50%{ margin-top: -180px;}
+            74%{ margin-top: -180px;}
 
-        75%{ margin-top: -270px;}
-        95%{ margin-top: -270px;}
+            75%{ margin-top: -270px;}
+            95%{ margin-top: -270px;}
 
-        96%{ margin-top:0;}
-        100%{ margin-top:0;}
-
-        
+            96%{ margin-top:0;}
+            100%{ margin-top:0;}
+        }
+        /* estilo tamaño Banner principal imagen central */
+        .image-container{
+            width: 100%;
+            height: 100%;
+        }
+        .social ul{
+            position: fixed;
+            padding-top: 15rem;
+            padding-left: 0.5rem;
+            li{
+                text-decoration: none;
+                list-style: none;
+                margin-top: 0.2rem;
+        }
     }
-    /* estilo tamaño Banner principal imagen central */
-    .image-container{
-        width: 100%;
-        height: 100%;
-    }
-    .social ul{
-        position: fixed;
-        padding-top: 15rem;
-        padding-left: 0.5rem;
-        
-    }
-    .social ul li{
-        text-decoration: none;
-        list-style: none;
-        margin-top: 0.2rem;
-    }
-    
 }
-
 /*estilos del footer*/
 footer{
     grid-area: footer;
-    background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
+    background-image: linear-gradient($color-header);
     text-align: center;
     .flex-container{
         display: flex;

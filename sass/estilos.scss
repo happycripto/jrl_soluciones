@@ -1,9 +1,37 @@
-//conexion con html//
+//conexion con todos los html//
 @import "segundarios/index";
 @import "segundarios/contacto";
 @import "segundarios/intro_servicios";
 @import "segundarios/presentacion";
 @import "segundarios/servicios";
+
+
+//conexion con utilities//
 @import "utilities/reset";
+@import "utilities/animaciones";
+@import "utilities/condicionales";
+@import "utilities/extend";
+@import "utilities/listas";
+@import "utilities/mixin";
+@import "utilities/variables";
+
+
+//nesting//
+/*estilo body evitar scroll lateral*/
+body{
+    overflow-x: hidden;
+    /* propiedades del contenedor padre */
+    .contenedor{
+        display: grid;
+        grid-template-columns:repeat(3,1fr) ;
+        grid-template-rows:(3, 1fr 2fr 1fr) ;
+        font-family:'Merriweather', serif;
+        /* grid template areas*/
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+}
 
 

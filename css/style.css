@@ -1,16 +1,4 @@
 @charset "UTF-8";
-/* propiedades del contenedor padre */
-body {
-  overflow-x: hidden; }
-
-.contenedor {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 3, 1fr 2fr 1fr;
-  font-family: 'Merriweather', serif;
-  /* grid template areas*/
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
-
 header {
   grid-area: header;
   position: sticky;
@@ -38,7 +26,7 @@ header {
   header div div .tituloEncabezado h1 a {
     text-decoration: none;
     list-style: none;
-    color: #002B5B;
+    color:#002B5B;
     font-size: 25pt;
     flex-flow: nowrap;
     display: flex;
@@ -121,10 +109,10 @@ main {
     position: fixed;
     padding-top: 15rem;
     padding-left: 0.5rem; }
-  main .social ul li {
-    text-decoration: none;
-    list-style: none;
-    margin-top: 0.2rem; }
+    main .social ul li {
+      text-decoration: none;
+      list-style: none;
+      margin-top: 0.2rem; }
 
 /*estilos del footer*/
 footer {
@@ -151,3 +139,17 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+/*estilo body evitar scroll lateral*/
+body {
+  overflow-x: hidden;
+  /* propiedades del contenedor padre */ }
+  body .contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3, 1fr 2fr 1fr;
+    font-family: 'Merriweather', serif;
+    /* grid template areas*/
+    grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer"; }
