@@ -4,6 +4,11 @@
 @import "segundarios/intro_servicios";
 @import "segundarios/presentacion";
 @import "segundarios/servicios";
+@import "segundarios/header";
+@import "segundarios/main";
+@import "segundarios/footer";
+@import "segundarios/queries";
+
 
 
 //conexion con utilities//
@@ -19,9 +24,11 @@
 //nesting//
 /*estilo body evitar scroll lateral*/
 body{
+    min-height:100vh;
     overflow-x: hidden;
     /* propiedades del contenedor padre */
     .contenedor{
+        min-height: 100vh;
         display: grid;
         grid-template-columns:repeat(3,1fr) ;
         grid-template-rows:(3, 1fr 2fr 1fr) ;

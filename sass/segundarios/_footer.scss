@@ -1,0 +1,28 @@
+@import '../utilities/variables';
+
+
+//nesting//
+/*estilos del footer*/
+footer{
+    grid-area: footer;
+    background-image: linear-gradient($color-header);
+    text-align: center;
+    border-top: solid 1px $border;
+    .flex-container{
+        display: flex;
+        flex-flow: nowrap;
+        flex-direction: row;
+    }
+    /*edicion del copyricht */
+    section .copyPrincipal .tamanoCopy{    
+        color: $blanco;
+        font-size: 20pt;
+    }
+    /* estilo y posicion imagen flotante Whatsapp */
+    section div .logoWhatsapp{
+        position: fixed;
+        top: 50rem; right: 0.7rem;
+        width: 4%;
+    }
+    
+}

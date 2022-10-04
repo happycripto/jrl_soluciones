@@ -1,50 +1,4 @@
 @charset "UTF-8";
-header {
-  grid-area: header;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
-  /* estilo del header padre flex */
-  /* estilo del logo */
-  /* estilo titulo empresa */
-  /* estilo link contacto*/ }
-  header div .logoTitulo {
-    display: flex;
-    flex-direction: row;
-    flex-flow: nowrap;
-    align-items: center; }
-  header .padre-flex {
-    display: flex;
-    flex-flow: nowrap;
-    flex-direction: row;
-    align-items: center; }
-  header div div .logoEncabezado a img {
-    width: 80%;
-    margin-bottom: 5px;
-    margin-left: 1rem; }
-  header div div .tituloEncabezado h1 a {
-    text-decoration: none;
-    list-style: none;
-    color:#002B5B;
-    font-size: 25pt;
-    flex-flow: nowrap;
-    display: flex;
-    margin-top: 10px;
-    margin-left: 10px; }
-  header div section .menu-hamburguesa {
-    margin-left: 3rem; }
-  header div section .menu-hamburguesa div h2 {
-    font-size: 13pt; }
-  header div .cajaContacto {
-    display: flex;
-    align-self: end;
-    justify-content: flex-end; }
-  header div .cajaContacto h2 a {
-    text-decoration: none;
-    list-style: none;
-    font-size: 13pt; }
-
 /* estilos del main*/
 main {
   grid-area: main;
@@ -72,7 +26,7 @@ main {
     margin: 0;
     display: flex;
     flex-direction: row;
-    color: white; }
+    color: #ebf1f9; }
   main .contenedorAnimado h3 ul {
     list-style: none;
     padding-left: 10px;
@@ -104,7 +58,105 @@ main {
     margin-top: 0; } }
   main .image-container {
     width: 100%;
-    height: 100%; }
+    min-height: 100%; }
+
+/*estilos de tarjetas*/
+main .tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+  flex-wrap: wrap; }
+  main .tarjetas .card {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    text-align: center; }
+
+/* --- PRESENTACION.HTML --- */
+/* Posicionamiento Imagenes y video */
+main .cajaPresentacion {
+  display: flex;
+  flex-direction: row; }
+  main .cajaPresentacion .imgSolucionando {
+    align-items: flex-end;
+    align-content: flex-end; }
+  main .cajaPresentacion .videoPresentacion {
+    position: absolute;
+    left: 500px;
+    top: 300px; }
+
+main section {
+  /* Team JRL */
+  /* Edicion de texto momentaneo team JRL */
+  /* posicion de foto del team jrl*/ }
+  main section .teamTitulo {
+    text-align: center;
+    color: #002B5B;
+    font-size: 30pt;
+    font-family: 'Merriweather', serif; }
+  main section .conceptoEquipo {
+    text-align: center;
+    height: 100px;
+    width: 1000px;
+    line-height: 1.6;
+    box-sizing: border-box;
+    border: #002B5B 2px solid;
+    margin-left: 600px; }
+  main section .imgTeam {
+    margin-left: 600px; }
+
+/*estilos del header*/
+header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
+  border-bottom: solid 1px #dadaf5;
+  /* estilo del header padre flex */
+  /* estilo del logo */
+  /* estilo titulo empresa */
+  /* estilo link contacto*/ }
+  header div .logoTitulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center; }
+  header .padre-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center; }
+  header div div .logoEncabezado a img {
+    width: 80%;
+    margin-bottom: 5px;
+    margin-left: 1rem; }
+  header div div .tituloEncabezado h1 a {
+    text-decoration: none;
+    list-style: none;
+    color: #002B5B;
+    font-size: 25pt;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px; }
+  header div section .menu-hamburguesa {
+    margin-left: 3rem; }
+  header div section .menu-hamburguesa div h2 {
+    font-size: 13pt; }
+  header div .cajaContacto {
+    display: flex;
+    align-self: end;
+    justify-content: flex-end; }
+  header div .cajaContacto h2 a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 13pt; }
+
+/*estilos de lista redes en el main*/
+main {
+  background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f); }
   main .social ul {
     position: fixed;
     padding-top: 15rem;
@@ -119,6 +171,7 @@ footer {
   grid-area: footer;
   background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
   text-align: center;
+  border-top: solid 1px #dadaf5;
   /*edicion del copyricht */
   /* estilo y posicion imagen flotante Whatsapp */ }
   footer .flex-container {
@@ -126,7 +179,7 @@ footer {
     flex-flow: nowrap;
     flex-direction: row; }
   footer section .copyPrincipal .tamanoCopy {
-    color: white;
+    color: #ebf1f9;
     font-size: 20pt; }
   footer section div .logoWhatsapp {
     position: fixed;
@@ -142,14 +195,14 @@ footer {
 
 /*estilo body evitar scroll lateral*/
 body {
+  min-height: 100vh;
   overflow-x: hidden;
   /* propiedades del contenedor padre */ }
   body .contenedor {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 3, 1fr 2fr 1fr;
     font-family: 'Merriweather', serif;
     /* grid template areas*/
-    grid-template-areas: "header header header"
- "main main main"
- "footer footer footer"; }
+    grid-template-areas: "header header header" "main main main" "footer footer footer"; }

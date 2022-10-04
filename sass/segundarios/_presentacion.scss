@@ -1,0 +1,45 @@
+/* --- PRESENTACION.HTML --- */
+/* Posicionamiento Imagenes y video */
+
+main{
+    .cajaPresentacion{
+        display: flex;
+        flex-direction: row;
+        .imgSolucionando{
+            align-items: flex-end;
+            align-content: flex-end;
+            
+        }
+        .videoPresentacion{
+            position: absolute;
+            left: 500px; top: 300px;
+        }
+        .imgRendimiento{
+        }
+    }
+    section{
+        /* Team JRL */
+        .teamTitulo{
+            text-align: center;
+            color: #002B5B;
+            font-size: 30pt;
+            font-family:'Merriweather', serif;
+        }
+        /* Edicion de texto momentaneo team JRL */
+        .conceptoEquipo{
+            text-align: center;
+            height: 100px; width: 1000px;
+            line-height: 1.6;
+            box-sizing:border-box;
+            border: #002B5B 2px solid;
+            margin-left: 600px;
+        }
+        /* posicion de foto del team jrl*/
+        .imgTeam{
+            margin-left: 600px;
+        }
+        
+    } 
+}
+
+

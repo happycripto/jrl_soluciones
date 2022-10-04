@@ -1,0 +1,60 @@
+@import '../utilities/variables';
+
+//nesting//
+/*estilos del header*/
+header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index:100;
+    background-image:linear-gradient($color-header);
+    border-bottom: solid 1px $border;
+    div .logoTitulo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+    }
+    /* estilo del header padre flex */
+    .padre-flex{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    /* estilo del logo */
+    div div .logoEncabezado a img{
+        width: 80%;
+        margin-bottom: 5px;
+        margin-left: 1rem;
+    }
+    /* estilo titulo empresa */
+    div div .tituloEncabezado h1 a{
+        text-decoration: none;
+        list-style: none;
+        color: $azul-Oscuro ;
+        font-size: 25pt;
+        flex-wrap: nowrap;
+        display: flex;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    div section .menu-hamburguesa{
+        margin-left: 3rem;
+    }
+    div section .menu-hamburguesa div h2{
+        font-size: 13pt;
+    }
+    div .cajaContacto{
+        display: flex;
+        align-self: end;
+        justify-content: flex-end;
+    }
+    /* estilo link contacto*/
+    div .cajaContacto h2 a{
+        text-decoration: none;
+        list-style: none;
+        font-size: 13pt;
+    }
+}
