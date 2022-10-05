@@ -102,34 +102,38 @@ main .tarjetas {
 /* Posicionamiento Imagenes y video */
 main .cajaPresentacion {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between;
+  height: 840px; }
   main .cajaPresentacion .imgSolucionando {
-    align-items: flex-end;
-    align-content: flex-end; }
+    align-self: end; }
   main .cajaPresentacion .videoPresentacion {
     position: absolute;
     left: 500px;
-    top: 300px; }
+    top: 200px; }
+  main .cajaPresentacion .imgRendimiento {
+    align-self: end; }
 
-main section {
-  /* Team JRL */
-  /* Edicion de texto momentaneo team JRL */
+main .presentacionEquipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* posicion de foto del team jrl*/ }
-  main section .teamTitulo {
+  main .presentacionEquipo div {
     text-align: center;
-    color: #002B5B;
-    font-size: 30pt;
-    font-family: 'Merriweather', serif; }
-  main section .conceptoEquipo {
-    text-align: center;
-    height: 100px;
+    padding: 1.5rem;
+    align-items: center;
     width: 1000px;
-    line-height: 1.6;
-    box-sizing: border-box;
-    border: #002B5B 2px solid;
-    margin-left: 600px; }
-  main section .imgTeam {
-    margin-left: 600px; }
+    /* Team JRL */
+    /* Edicion de texto momentaneo team JRL */ }
+    main .presentacionEquipo div .teamTitulo {
+      color: #002B5B;
+      font-size: 30pt;
+      font-family: 'Merriweather', serif; }
+    main .presentacionEquipo div .conceptoEquipo {
+      text-align: justify;
+      line-height: 1.6;
+      box-sizing: border-box; }
 
 main .contenedorServicios {
   display: flex;

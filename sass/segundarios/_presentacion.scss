@@ -5,41 +5,45 @@ main{
     .cajaPresentacion{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        height: 840px;
         .imgSolucionando{
-            align-items: flex-end;
-            align-content: flex-end;
+            align-self: end;
             
         }
         .videoPresentacion{
             position: absolute;
-            left: 500px; top: 300px;
+            left: 500px; top: 200px;
         }
         .imgRendimiento{
+            align-self: end;
         }
     }
-    section{
-        /* Team JRL */
-        .teamTitulo{
-            text-align: center;
-            color: #002B5B;
-            font-size: 30pt;
-            font-family:'Merriweather', serif;
-        }
-        /* Edicion de texto momentaneo team JRL */
-        .conceptoEquipo{
-            text-align: center;
-            height: 100px; width: 1000px;
-            line-height: 1.6;
-            box-sizing:border-box;
-            border: #002B5B 2px solid;
-            margin-left: 600px;
-        }
+    .presentacionEquipo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         /* posicion de foto del team jrl*/
-        .imgTeam{
-            margin-left: 600px;
+        div{
+            text-align: center;
+            padding: 1.5rem;
+            align-items: center;
+            width: 1000px;
+            /* Team JRL */
+            .teamTitulo{
+                color: #002B5B;
+                font-size: 30pt;
+                font-family:'Merriweather', serif;
+            }
+            /* Edicion de texto momentaneo team JRL */
+            .conceptoEquipo{
+                text-align: justify;
+                line-height: 1.6;
+                box-sizing:border-box;
+            }
         }
-        
-    } 
+    }  
+    
 }
 
 
