@@ -1,0 +1,98 @@
+@import '../utilities/variables';
+
+main{
+    .contenedorServicios{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        .cajaConsultoria{
+            border: solid 2px $blanco;
+            border-radius: 15px;
+            margin: 2rem;
+            width: 1300px;
+            height: 600px;
+            .tituloServicio1{
+                font-size: 26pt;
+                text-decoration: underline;
+                text-align: right;
+                margin-right: 18rem;
+                padding-top: 2rem;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                .imgConsultoriaP{
+                    padding: 1.5rem;
+                    padding-top: 0%;
+                    width: 500px;
+                    height: 500px;
+                    }
+                p{
+                    padding: 2rem;
+                    font-size: large;
+                    text-align: justify;
+                }
+            }
+        }
+        .cajaInnovacion{
+            border: solid 2px $blanco;
+            border-radius: 15px;
+            margin: 2rem;
+            width: 1300px;
+            height: 600px;
+            .tituloServicio2{
+                font-size: 26pt;
+                text-decoration: underline;
+                text-align: left;
+                margin-left: 15rem;
+                padding-top: 2rem;
+            }
+            div{
+                display: flex;
+                flex-direction: row-reverse;
+                .imgInnovacionP{
+                    padding: 1.5rem;
+                    padding-top: 0%;
+                    width: 500px;
+                    height: 500px;
+                    }
+                p{
+                    padding: 2rem;
+                    font-size: large;
+                    text-align: justify;
+                }
+            }  
+        }
+        .cajaMarketing{
+            border: solid 2px $blanco;
+            border-radius: 15px;
+            margin: 2rem;
+            width: 1300px;
+            height: 600px;
+            .tituloServicio3{
+                font-size: 26pt;
+                text-decoration: underline;
+                text-align: right;
+                margin-right: 18rem;
+                padding-top: 2rem;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                .imgMarketingP{
+                    padding: 1.5rem;
+                    padding-top: 0%;
+                    width: 500px;
+                    height: 500px;
+                    }
+                p{
+                    padding: 2rem;
+                    font-size: large;
+                    text-align: justify;
+                }
+            }    
+        }
+
+    }
+}

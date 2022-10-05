@@ -14,7 +14,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Quienes somos?</title>
+    <title>contacto</title>
 <body>
     <div class="contenedor" >
         <header>
@@ -69,7 +69,40 @@
             </div>       
         </header>
         <main>
-            <div class="social">
+            <div  class="cajaFormulario" >
+                <form class="formulario" >
+                    <h3 class="tituloFormulario">FORMULARIO DE CONTACTO</h3>
+                    <div class="imputFormulario" >
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">NOMBRE O RAZON SOCIAL</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">CORREO ELECTRONICO</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">NUMERO DE TELEFONO</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="numero">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">ELIGE METODO DE CONTACTO</label>
+                            <select class="form-control" id="exampleFormControlSelect1" >
+                            <option> </option>
+                            <option>Quiero que me escriban por whastapp</option>
+                            <option>Quiero que me llamen</option>
+                            <option>Quiero que me escriban por email</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="mensaje"></textarea>
+                        </div>
+                        <button type="button submit" class="btn btn-light">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="socialContacto">
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/jrlgestoria/" target="_blank" class="icon-instagram">
@@ -93,42 +126,6 @@
                     </li>
                 </ul>
             </div>
-            <form class="formulario" >
-                <fieldset>
-                    <h3>
-                        <legend> Formulario de contacto </legend>
-                    </h3>
-                    <div>
-                        <label for="nombre_apellido">Completa tu Nombre:</label>
-                        <input type="text" name="nombre_apellido" />
-                        </div>
-                    <div>
-                        <label for="numero_telefono">Numero de Telefono:</label>
-                        <input type="tel" name="numero_telefono" />
-                    </div>
-                    <div>
-                        <label for="email">Completa tu Email:</label>
-                        <input type="text" name="email" />
-                    </div>
-                    <div>
-                        <form>
-                            <h3> Servicios prestados: </h3>
-                            <select name="servicios" id="servicios">
-                                <option value="">Quiero que me contacten</option>
-                                <option value="consultoria_contable">Consultoria Contable</option>                                
-                                <option value="consultoria_impuestos">Consultoria Impuestos</option>                                
-                                <option value="consultoria_administrativa">Consultoria Informatica</option>
-                                <option value="crear_pagina_web">Crear Pagina Web</option>
-                                <option value="marketing_publicidad">Marketing y Publicidad</option>
-                            </select>
-                        </form>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
-                    </div>
-                </fieldset>
-            </form>
         </main>
         <footer>
             <section class="row flex-container col-12">
@@ -145,8 +142,7 @@
             </section>
         </footer>
     </div>
-
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
 </body>
 </html>

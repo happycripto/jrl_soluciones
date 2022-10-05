@@ -60,6 +60,31 @@ main {
     width: 100%;
     min-height: 100%; }
 
+main .cajaFormulario {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem; }
+  main .cajaFormulario .formulario {
+    width: 600px;
+    height: 270px;
+    text-align: center; }
+    main .cajaFormulario .formulario .tituloformulario {
+      text-align: center; }
+    main .cajaFormulario .formulario .imputFormulario {
+      text-align: left; }
+    main .cajaFormulario .formulario .btn {
+      margin-top: 1rem; }
+
+main .socialContacto ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none; }
+  main .socialContacto ul li a .icon-redes {
+    width: 50%;
+    margin-top: 5rem; }
+
 /*estilos de tarjetas*/
 main .tarjetas {
   display: flex;
@@ -105,6 +130,83 @@ main section {
     margin-left: 600px; }
   main section .imgTeam {
     margin-left: 600px; }
+
+main .contenedorServicios {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  main .contenedorServicios .cajaConsultoria {
+    border: solid 2px #ebf1f9;
+    border-radius: 15px;
+    margin: 2rem;
+    width: 1300px;
+    height: 600px; }
+    main .contenedorServicios .cajaConsultoria .tituloServicio1 {
+      font-size: 26pt;
+      text-decoration: underline;
+      text-align: right;
+      margin-right: 18rem;
+      padding-top: 2rem; }
+    main .contenedorServicios .cajaConsultoria div {
+      display: flex;
+      flex-direction: row; }
+      main .contenedorServicios .cajaConsultoria div .imgConsultoriaP {
+        padding: 1.5rem;
+        padding-top: 0%;
+        width: 500px;
+        height: 500px; }
+      main .contenedorServicios .cajaConsultoria div p {
+        padding: 2rem;
+        font-size: large;
+        text-align: justify; }
+  main .contenedorServicios .cajaInnovacion {
+    border: solid 2px #ebf1f9;
+    border-radius: 15px;
+    margin: 2rem;
+    width: 1300px;
+    height: 600px; }
+    main .contenedorServicios .cajaInnovacion .tituloServicio2 {
+      font-size: 26pt;
+      text-decoration: underline;
+      text-align: left;
+      margin-left: 15rem;
+      padding-top: 2rem; }
+    main .contenedorServicios .cajaInnovacion div {
+      display: flex;
+      flex-direction: row-reverse; }
+      main .contenedorServicios .cajaInnovacion div .imgInnovacionP {
+        padding: 1.5rem;
+        padding-top: 0%;
+        width: 500px;
+        height: 500px; }
+      main .contenedorServicios .cajaInnovacion div p {
+        padding: 2rem;
+        font-size: large;
+        text-align: justify; }
+  main .contenedorServicios .cajaMarketing {
+    border: solid 2px #ebf1f9;
+    border-radius: 15px;
+    margin: 2rem;
+    width: 1300px;
+    height: 600px; }
+    main .contenedorServicios .cajaMarketing .tituloServicio3 {
+      font-size: 26pt;
+      text-decoration: underline;
+      text-align: right;
+      margin-right: 18rem;
+      padding-top: 2rem; }
+    main .contenedorServicios .cajaMarketing div {
+      display: flex;
+      flex-direction: row; }
+      main .contenedorServicios .cajaMarketing div .imgMarketingP {
+        padding: 1.5rem;
+        padding-top: 0%;
+        width: 500px;
+        height: 500px; }
+      main .contenedorServicios .cajaMarketing div p {
+        padding: 2rem;
+        font-size: large;
+        text-align: justify; }
 
 /*estilos del header*/
 header {
