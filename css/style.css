@@ -220,6 +220,7 @@ header {
   z-index: 100;
   background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
   border-bottom: solid 1px #dadaf5;
+  /*estilos del logo en el header*/
   /* estilo del header padre flex */
   /* estilo del logo */
   /* estilo titulo empresa */
@@ -292,6 +293,60 @@ footer {
     top: 50rem;
     right: 0.7rem;
     width: 4%; }
+
+@media (max-width: 576px) {
+  header div {
+    /*Logo y titulo*/
+    /*menu servicios con bootstrap*/ }
+    header div .logoTitulo {
+      display: flex;
+      /*Titulo principal nombre empresa*/ }
+      header div .logoTitulo .logoEncabezado {
+        width: 100%; }
+      header div .logoTitulo .tituloEncabezado {
+        display: flex;
+        font-size: 10pt;
+        width: 100%; }
+        header div .logoTitulo .tituloEncabezado h1 a {
+          width: 200px;
+          font-size: 18pt;
+          display: flex; }
+    header div .menu .menu-hamburguesa .navbar-toggler-icon {
+      filter: brightness(0) invert(1); }
+    header div .cajaContacto {
+      display: none; }
+  .btn-whatsapp-desktop {
+    display: none; }
+  .logoRedes {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-left: 1rem;
+    display: inline-block; }
+  .flex-container {
+    flex-flow: wrap; }
+  h3.tamanoCopy {
+    font-size: 10px; }
+  main {
+    min-height: 100vh; }
+    main .social ul {
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      margin-top: 27rem; }
+      main .social ul li {
+        text-decoration: none;
+        list-style: none; }
+        main .social ul li a .icon-redes {
+          width: 70%; }
+    main .image-container img {
+      object-fit: cover;
+      min-height: 100vh; }
+  footer section {
+    height: 0.8rem; }
+    footer section .copyPrincipal .tamanoCopy {
+      font-size: 8pt;
+      padding-top: 0.1rem; } }
 
 /* reset */
 * {

@@ -9,13 +9,15 @@ header{
     z-index:100;
     background-image:linear-gradient($color-header);
     border-bottom: solid 1px $border;
-    div .logoTitulo{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        
-    }
+        /*estilos del logo en el header*/
+        div {  
+            .logoTitulo{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+        }    
     /* estilo del header padre flex */
     .padre-flex{
         display: flex;
