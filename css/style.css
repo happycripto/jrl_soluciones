@@ -302,6 +302,7 @@ footer {
 /*estilo body evitar scroll lateral*/
 body {
   min-height: 100vh;
+  width: 100%;
   overflow-x: hidden;
   /* propiedades del contenedor padre */ }
   body .contenedor {
