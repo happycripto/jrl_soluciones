@@ -317,20 +317,8 @@ footer {
             display: flex; }
       body header div .menu .menu-hamburguesa .navbar-toggler-icon {
         filter: brightness(0) invert(1); }
-      body header div .cajaContacto {
-        display: none; }
-    body .btn-whatsapp-desktop {
-      display: none; }
-    body .logoRedes {
-      display: flex;
-      flex-direction: row;
-      width: 20%;
-      margin-left: 1rem;
-      display: inline-block; }
     body .flex-container {
       flex-flow: wrap; }
-    body h3.tamanoCopy {
-      font-size: 10px; }
     body main {
       min-height: 100vh; }
       body main .social ul {
@@ -362,12 +350,26 @@ footer {
             animation: none;
             line-height: 2rem; }
             body main .contenedorAnimado h3 ul li {
-              font-size: 15pt; }
+              font-size: 12pt; }
     body footer section {
       height: 0.8rem; }
       body footer section .copyPrincipal .tamanoCopy {
         font-size: 8pt;
-        padding-top: 0.1rem; } }
+        padding-top: 0.1rem; }
+      body footer section div .logoWhatsapp {
+        top: 48rem;
+        right: 0.5rem;
+        width: 20%;
+        animation-name: nombre;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; }
+  @keyframes nombre {
+    0% {
+      transform: translateY(0); }
+    50% {
+      transform: translateY(7px); }
+    100% {
+      transform: translateY(0px); } } }
 
 /* reset */
 * {

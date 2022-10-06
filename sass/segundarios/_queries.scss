@@ -35,27 +35,14 @@
                             }
                     }
                 }
-                .cajaContacto{
-                    display: none;
-                }
             }
         }
         .btn-whatsapp-desktop {
-            display: none;
-        }
-        .logoRedes {
-            display: flex;
-            flex-direction: row;
-            width: 20%;
-            margin-left: 1rem;
-            display: inline-block;
         }
         .flex-container {
             flex-flow: wrap;
         }
-        h3.tamanoCopy {
-            font-size: 10px;
-        }
+
         main{
             min-height: 100vh;
             .social {
@@ -99,7 +86,7 @@
                         animation: none;
                         line-height:2rem;
                         li{
-                            font-size: 15pt;
+                            font-size: 12pt;
                         }
                     }
                     
@@ -116,6 +103,21 @@
                         padding-top: 0.1rem;
                     } 
                 }
+                div{
+                    .logoWhatsapp{
+                        top: 48rem; 
+                        right: 0.5rem;
+                        width: 20%;
+                        animation-name: nombre;
+                        animation-duration: 2s;
+                        animation-iteration-count: infinite;
+                        @keyframes nombre {
+                            0% {transform: translateY(0); }
+                            50% {transform: translateY(7px); }
+                            100% {transform: translateY(0px); } }
+                    }
+                }
+                
             }
         }
     }
