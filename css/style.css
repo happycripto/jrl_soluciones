@@ -86,17 +86,20 @@ main .socialContacto ul {
     margin-top: 5rem; }
 
 /*estilos de tarjetas*/
-main .tarjetas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.mainTarjetas {
   height: 100vh;
-  flex-wrap: wrap; }
-  main .tarjetas .card {
+  justify-content: space-around; }
+  .mainTarjetas .tarjetas {
     display: flex;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    text-align: center; }
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50vh;
+    flex-wrap: wrap; }
+    .mainTarjetas .tarjetas .card {
+      display: flex;
+      margin-top: 6rem;
+      margin-bottom: 5rem;
+      text-align: center; }
 
 /* --- PRESENTACION.HTML --- */
 /* Posicionamiento Imagenes y video */
@@ -243,15 +246,16 @@ header {
     text-decoration: none;
     list-style: none;
     color: #002B5B;
-    font-size: 25pt;
+    font-size: 18pt;
     flex-wrap: nowrap;
     display: flex;
     margin-top: 10px;
-    margin-left: 10px; }
+    margin-left: 10px;
+    width: 200px; }
   header div section .menu-hamburguesa {
     margin-left: 3rem; }
   header div section .menu-hamburguesa div h2 {
-    font-size: 13pt; }
+    font-size: 10pt; }
   header div .cajaContacto {
     display: flex;
     align-self: end;
@@ -370,6 +374,136 @@ footer {
       transform: translateY(7px); }
     100% {
       transform: translateY(0px); } } }
+
+@media (max-width: 991px) {
+  body {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden; }
+    body header div {
+      /*Logo y titulo*/
+      /*menu servicios con bootstrap*/ }
+      body header div .logoTitulo {
+        display: flex;
+        /*Titulo principal nombre empresa*/ }
+        body header div .logoTitulo .logoEncabezado {
+          width: 100%; }
+        body header div .logoTitulo .tituloEncabezado {
+          display: flex;
+          font-size: 10pt;
+          width: 100%; }
+          body header div .logoTitulo .tituloEncabezado h1 a {
+            width: 200px;
+            font-size: 18pt;
+            display: flex; }
+      body header div .menu .menu-hamburguesa .navbar-toggler-icon {
+        filter: brightness(0) invert(1); }
+    body .flex-container {
+      flex-flow: wrap; }
+    body main {
+      min-height: 100vh; }
+      body main .image-container img {
+        object-fit: cover;
+        min-height: 100vh; }
+      body main .contenedorAnimado {
+        width: 320px;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body main .contenedorAnimado h3 {
+          text-align: center;
+          font-size: 30pt;
+          display: flex;
+          flex-direction: column; }
+          body main .contenedorAnimado h3 ul {
+            text-align: justify;
+            animation: none;
+            line-height: 2rem; }
+            body main .contenedorAnimado h3 ul li {
+              font-size: 12pt; }
+    body footer section {
+      height: 0.8rem; }
+      body footer section .copyPrincipal .tamanoCopy {
+        font-size: 8pt;
+        padding-top: 0.1rem; }
+      body footer section div .logoWhatsapp {
+        top: 45rem;
+        right: 0.5rem;
+        width: 10%;
+        animation-name: nombre;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; }
+  @keyframes nombre {
+    0% {
+      transform: translateY(0); }
+    50% {
+      transform: translateY(7px); }
+    100% {
+      transform: translateY(0px); } } }
+
+@media (min-width: 992px) {
+  body {
+    overflow-x: hidden; }
+    body main {
+      grid-area: main;
+      min-height: 100vh;
+      /* estilo tamaño Banner principal imagen central */ }
+      body main .image-container img {
+        object-fit: cover;
+        min-height: 100vh; }
+      body main .social ul li a .icon-redes {
+        width: 18%;
+        margin-top: 10px; }
+      body main .contenedorAnimado {
+        width: 800px;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 15px;
+        padding-bottom: 2rem;
+        text-shadow: black 6px 6px 2px; }
+        body main .contenedorAnimado h3 {
+          font-size: 25pt;
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          color: #ebf1f9; }
+          body main .contenedorAnimado h3 ul {
+            list-style: none;
+            padding-left: 10px;
+            margin: 0;
+            font-size: 25pt;
+            animation: cambiar 10s infinite;
+            line-height: 45px; }
+  @keyframes cambiar {
+    0% {
+      margin-top: 0; }
+    24% {
+      margin-top: 0; }
+    25% {
+      margin-top: -45px; }
+    49% {
+      margin-top: -45px; }
+    50% {
+      margin-top: -90px; }
+    74% {
+      margin-top: -90px; }
+    75% {
+      margin-top: -135px; }
+    95% {
+      margin-top: -135px; }
+    96% {
+      margin-top: 0; }
+    100% {
+      margin-top: 0; } } }
 
 /* reset */
 * {

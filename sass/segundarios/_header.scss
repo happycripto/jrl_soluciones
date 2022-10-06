@@ -36,17 +36,18 @@ header{
         text-decoration: none;
         list-style: none;
         color: $azul-Oscuro ;
-        font-size: 25pt;
+        font-size: 18pt;
         flex-wrap: nowrap;
         display: flex;
         margin-top: 10px;
         margin-left: 10px;
+        width: 200px;
     }
     div section .menu-hamburguesa{
         margin-left: 3rem;
     }
     div section .menu-hamburguesa div h2{
-        font-size: 13pt;
+        font-size: 10pt;
     }
     div .cajaContacto{
         display: flex;

@@ -2,16 +2,18 @@
 
 //nestin//
 /*estilos de tarjetas*/
-main{
+.mainTarjetas{
+    height: 100vh;
+    justify-content:space-around;
     .tarjetas{
         display: flex;
         flex-direction: row;
         justify-content:space-around;
-        height: 100vh;
+        height: 50vh;
         flex-wrap: wrap;
             .card{
                 display: flex;  
-                margin-top: 4rem;
+                margin-top: 6rem;
                 margin-bottom: 5rem;
                 text-align: center;
             }

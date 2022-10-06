@@ -30,19 +30,16 @@
                 /*menu servicios con bootstrap*/
                 .menu{
                     .menu-hamburguesa{
-                        .navbar-toggler-icon {
-                                filter: brightness(0) invert(1);
-                            }
+                        .navbar-toggler-icon{
+                            filter: brightness(0) invert(1);
+                        }
                     }
                 }
             }
         }
-        .btn-whatsapp-desktop {
-        }
-        .flex-container {
+        .flex-container{
             flex-flow: wrap;
-        }
-
+            }
         main{
             min-height: 100vh;
             .social {
@@ -73,14 +70,12 @@
                 overflow:visible;
                 display: flex;
                 flex-direction: column;
-                justify-content:center ;
+                justify-content:center;
                 h3{
                     text-align: center;
                     font-size: 30pt;
                     display: flex;
                     flex-direction: column;
-                    p{}
-                        
                     ul{
                         text-align: justify;
                         animation: none;
@@ -123,5 +118,171 @@
     }
 }    
 
-@media (max-width:1200px)  {
+@media (max-width:991px)  {
+    body{
+        min-height:100vh;
+        width: 100%;
+        overflow-x: hidden;
+            header{
+                div{
+                    /*Logo y titulo*/
+                    .logoTitulo{
+                        display: flex;
+                        .logoEncabezado{ 
+                            width: 100%;
+                        }
+                        /*Titulo principal nombre empresa*/
+                        .tituloEncabezado{
+                            display: flex;
+                            font-size: 10pt;
+                            width: 100%;
+                            h1{
+                                a{
+                                    width: 200px;
+                                font-size: 18pt;
+                                display: flex;
+                                }
+                            }
+                            
+                        }
+                    }
+                    /*menu servicios con bootstrap*/
+                    .menu{
+                        .menu-hamburguesa{
+                            .navbar-toggler-icon {
+                                    filter: brightness(0) invert(1);
+                                }
+                        }
+                    }
+                }
+            }
+            .flex-container {
+                flex-flow: wrap;
+            }
+            main{
+                min-height: 100vh;
+                .image-container{
+                    img{
+                        object-fit:cover;
+                        min-height: 100vh;
+                    }
+                }
+                .contenedorAnimado{
+                    width: 320px;
+                    overflow:visible;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center ;
+                    h3{
+                        text-align: center;
+                        font-size: 30pt;
+                        display: flex;
+                        flex-direction: column;
+                        p{}
+                            
+                        ul{
+                            text-align: justify;
+                            animation: none;
+                            line-height:2rem;
+                            li{
+                                font-size: 12pt;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            footer{
+                section{
+                    height: 0.8rem;
+                    .copyPrincipal{
+                        .tamanoCopy{ 
+                            font-size: 8pt; 
+                            padding-top: 0.1rem;
+                        } 
+                    }
+                    div{
+                        .logoWhatsapp{
+                            top: 45rem; 
+                            right: 0.5rem;
+                            width: 10%;
+                            animation-name: nombre;
+                            animation-duration: 2s;
+                            animation-iteration-count: infinite;
+                            @keyframes nombre {
+                                0% {transform: translateY(0); }
+                                50% {transform: translateY(7px); }
+                                100% {transform: translateY(0px); } }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }    
+
+@media (min-width:992px){
+    body{
+        overflow-x: hidden;
+        main{
+            grid-area: main;
+            min-height: 100vh;
+                    /* estilo tamaño Banner principal imagen central */
+                    .image-container{
+                        img{
+                            object-fit:cover;
+                            min-height: 100vh;
+                        }
+                    }
+                .social ul li a .icon-redes{
+                    width: 18%;
+                    margin-top: 10px; 
+                }
+                .contenedorAnimado{
+                    width: 800px;
+                    height: 45px;
+                    display: flex;
+                    flex-direction: row;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    padding-bottom: 2rem;
+                    text-shadow: black 6px 6px 2px;
+                    h3{
+                        font-size: 25pt;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: row; 
+                        color: $blanco;
+                        ul{
+                            list-style: none;
+                            padding-left: 10px;
+                            margin: 0;
+                            font-size: 25pt;
+                            animation: cambiar 10s infinite;
+                            line-height: 45px;
+                            @keyframes cambiar {
+                                0%{ margin-top:0;}
+                                24%{ margin-top:0;}
+                                25%{ margin-top: -45px;}
+                                49%{ margin-top: -45px;}
+                                50%{ margin-top: -90px;}
+                                74%{ margin-top: -90px;}
+                                75%{ margin-top: -135px;}
+                                95%{ margin-top: -135px;}
+                                96%{ margin-top:0;}
+                                100%{ margin-top:0;}
+                            
+                            }
+                        }
+                    }
+            }
+        }
+    }
 }
+
