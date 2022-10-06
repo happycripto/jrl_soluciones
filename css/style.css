@@ -333,7 +333,7 @@ footer {
       display: flex;
       flex-direction: row;
       position: fixed;
-      margin-top: 27rem; }
+      margin-top: 26.4rem; }
       main .social ul li {
         text-decoration: none;
         list-style: none; }
@@ -342,6 +342,23 @@ footer {
     main .image-container img {
       object-fit: cover;
       min-height: 100vh; }
+    main .contenedorAnimado {
+      width: 300px;
+      overflow: visible;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main .contenedorAnimado h3 {
+        text-align: center;
+        font-size: 20pt;
+        display: flex;
+        flex-direction: column; }
+        main .contenedorAnimado h3 ul {
+          text-align: justify;
+          animation: none;
+          line-height: 2rem; }
+          main .contenedorAnimado h3 ul li {
+            font-size: 10pt; }
   footer section {
     height: 0.8rem; }
     footer section .copyPrincipal .tamanoCopy {
