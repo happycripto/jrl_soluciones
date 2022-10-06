@@ -1,120 +1,125 @@
 
-@media (max-width: 576px ) {
-    header{
-        div{
-            /*Logo y titulo*/
-            .logoTitulo{
-                display: flex;
-                .logoEncabezado{ 
-                    width: 100%;
-                }
-                /*Titulo principal nombre empresa*/
-                .tituloEncabezado{
+@media (max-width: 576px) {
+    body{
+    min-height:100vh;
+    width: 100%;
+    overflow-x: hidden;
+        header{
+            div{
+                /*Logo y titulo*/
+                .logoTitulo{
                     display: flex;
-                    font-size: 10pt;
-                    width: 100%;
-                    h1{
-                        a{
-                            width: 200px;
-                        font-size: 18pt;
+                    .logoEncabezado{ 
+                        width: 100%;
+                    }
+                    /*Titulo principal nombre empresa*/
+                    .tituloEncabezado{
                         display: flex;
+                        font-size: 10pt;
+                        width: 100%;
+                        h1{
+                            a{
+                                width: 200px;
+                            font-size: 18pt;
+                            display: flex;
+                            }
                         }
-                    }
-                    
-                }
-            }
-            /*menu servicios con bootstrap*/
-            .menu{
-                .menu-hamburguesa{
-                    .navbar-toggler-icon {
-                            filter: brightness(0) invert(1);
-                        }
-                }
-            }
-            .cajaContacto{
-                display: none;
-            }
-        }
-    }
-    .btn-whatsapp-desktop {
-        display: none;
-    }
-    .logoRedes {
-        display: flex;
-        flex-direction: row;
-        width: 20%;
-        margin-left: 1rem;
-        display: inline-block;
-    }
-    .flex-container {
-        flex-flow: wrap;
-    }
-    h3.tamanoCopy {
-        font-size: 10px;
-    }
-    main{
-        min-height: 100vh;
-        .social {
-            ul{
-                display: flex;
-                flex-direction: row;
-                position:fixed;
-                margin-top: 26.4rem;
-                li{
-                    text-decoration: none;
-                    list-style: none;
-                    a{
-                        .icon-redes{
-                            width: 70%;
-                        }
+                        
                     }
                 }
+                /*menu servicios con bootstrap*/
+                .menu{
+                    .menu-hamburguesa{
+                        .navbar-toggler-icon {
+                                filter: brightness(0) invert(1);
+                            }
+                    }
+                }
+                .cajaContacto{
+                    display: none;
+                }
             }
         }
-        .image-container {
-            img {
-                object-fit:cover;
-                min-height: 100vh;
-            }
+        .btn-whatsapp-desktop {
+            display: none;
         }
-        .contenedorAnimado{
-            width: 300px;
-            overflow:visible;
+        .logoRedes {
             display: flex;
-            flex-direction: column;
-            justify-content:center ;
-            h3{
-                text-align: center;
-                font-size: 20pt;
+            flex-direction: row;
+            width: 20%;
+            margin-left: 1rem;
+            display: inline-block;
+        }
+        .flex-container {
+            flex-flow: wrap;
+        }
+        h3.tamanoCopy {
+            font-size: 10px;
+        }
+        main{
+            min-height: 100vh;
+            .social {
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    position:fixed;
+                    margin-top: 20.5rem;
+                    li{
+                        text-decoration: none;
+                        list-style: none;
+                        a{
+                            .icon-redes{
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+            .image-container {
+                img {
+                    object-fit:cover;
+                    min-height: 100vh;
+                }
+            }
+            .contenedorAnimado{
+                width: 300px;
+                overflow:visible;
                 display: flex;
                 flex-direction: column;
-                p{}
-                    
-                ul{
-                    text-align: justify;
-                    animation: none;
-                    line-height:2rem;
-                    li{
-                        font-size: 10pt;
+                justify-content:center ;
+                h3{
+                    text-align: center;
+                    font-size: 20pt;
+                    display: flex;
+                    flex-direction: column;
+                    p{}
+                        
+                    ul{
+                        text-align: justify;
+                        animation: none;
+                        line-height:2rem;
+                        li{
+                            font-size: 10pt;
+                        }
                     }
+                    
+                    
                 }
-                
-                
+            }
+        }
+        footer{
+            section{
+                height: 0.8rem;
+                .copyPrincipal{
+                    .tamanoCopy{ 
+                        font-size: 8pt; 
+                        padding-top: 0.1rem;
+                    } 
+                }
             }
         }
     }
-    footer{
-        section{
-            height: 0.8rem;
-            .copyPrincipal{
-                .tamanoCopy{ 
-                    font-size: 8pt; 
-                    padding-top: 0.1rem;
-                } 
-            }
-        }
-    }
-}
+}    
 
 @media (max-width:1200px)  {
 }
