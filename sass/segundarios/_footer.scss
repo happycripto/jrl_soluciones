@@ -19,10 +19,21 @@ footer{
         font-size: 20pt;
     }
     /* estilo y posicion imagen flotante Whatsapp */
-    section div .logoWhatsapp{
-        position: fixed;
-        top: 50rem; right: 0.7rem;
-        width: 4%;
+    section{ 
+        div{ 
+            .logoWhatsapp{
+                position: fixed;
+                top: 45rem; right: 0.7rem;
+                width: 4%;
+                animation-name: nombre;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                @keyframes nombre {
+                    0% {transform: translateY(0); }
+                    50% {transform: translateY(7px); }
+                    100% {transform: translateY(0px); } 
+                }
+            }
+        }
     }
-    
 }

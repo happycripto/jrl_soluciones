@@ -29,12 +29,14 @@
                 }
                 /*menu servicios con bootstrap*/
                 .menu{
-                    .menu-hamburguesa{
-                        .navbar-toggler-icon{
-                            filter: brightness(0) invert(1);
+                        margin-right: 2rem;
+                        margin-top: -1.5rem;
+                        position: fixed;
+                            .navbar-toggler-icon{
+                                filter: brightness(0) invert(1);
                         }
-                    }
                 }
+                
             }
         }
         .flex-container{
@@ -88,6 +90,127 @@
                     
                 }
             }
+            .cajaFormulario{
+                /*height: 50vh;*/
+                display: flex;
+                justify-content: center;
+                margin-top: 4rem;
+                .formulario{
+                    width: 250px;
+                    height: 270px;
+                    text-align: center;
+                        .tituloformulario{
+                            text-align: center;
+                        }
+                        .imputFormulario{
+                            text-align: left;
+                        }
+                        .btn{
+                            margin-top: 1rem;
+                        }
+                }
+            }
+            /*estilos html servicio mobile*/
+            .contenedorServicios{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                
+                .cajaConsultoria{
+                    border: solid 2px $blanco;
+                    border-radius: 15px;
+                    margin-bottom: 0.5rem;
+                    width: 350px;
+                    height: 500px;
+                    .tituloServicio1{
+                        font-size: 12pt;
+                        text-decoration: underline;
+                        text-align: center;
+                        margin-right: 0;
+                        padding-top: 0;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .imgConsultoriaP{
+                            padding: 1.5rem;
+                            padding-top: 0%;
+                            width: 150px;
+                            height: 150px;
+                            }
+                        p{
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            font-size: 8pt;
+                            text-align: justify;
+                        }
+                    }
+                }
+                .cajaInnovacion{
+                    border: solid 2px $blanco;
+                    border-radius: 15px;
+                    margin-bottom: 0.5rem;
+                    width: 350px;
+                    height: 500px;
+                    .tituloServicio2{
+                        font-size: 12pt;
+                        text-decoration: underline;
+                        text-align: center;
+                        margin-right: 0;
+                        padding-top: 0;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .imgInnovacionP{
+                            padding: 0;
+                            padding-top: 0%;
+                            width: 150px;
+                            height: 150px;
+                            }
+                        p{
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            font-size: 8pt;
+                            text-align: justify;
+                        }
+                    }  
+                }
+                .cajaMarketing{
+                    border: solid 2px $blanco;
+                    border-radius: 15px;
+                    margin-bottom: 0.5rem;
+                    width: 350px;
+                    height: 500px;
+                    .tituloServicio3{
+                        font-size: 12pt;
+                        text-decoration: underline;
+                        text-align: center;
+                        margin-right: 0;
+                        padding-top: 0;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .imgMarketingP{
+                            padding: 0;
+                            padding-top: 0%;
+                            width: 150px;
+                            height: 150px;
+                            }
+                        p{
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            font-size: 8pt;
+                            text-align: justify;
+                        }
+                    }    
+                }
+            }
         }
         footer{
             section{
@@ -100,8 +223,8 @@
                 }
                 div{
                     .logoWhatsapp{
-                        top: 48rem; 
-                        right: 0.5rem;
+                        top: 10rem; 
+                        right: 0;
                         width: 20%;
                         animation-name: nombre;
                         animation-duration: 2s;
@@ -116,7 +239,7 @@
             }
         }
     }
-}    
+}
 
 @media (max-width:991px)  {
     body{
@@ -149,6 +272,7 @@
                     /*menu servicios con bootstrap*/
                     .menu{
                         .menu-hamburguesa{
+                            
                             .navbar-toggler-icon {
                                     filter: brightness(0) invert(1);
                                 }
@@ -159,7 +283,7 @@
             .flex-container {
                 flex-flow: wrap;
             }
-            main{
+            main{ 
                 min-height: 100vh;
                 .image-container{
                     img{
@@ -178,8 +302,6 @@
                         font-size: 30pt;
                         display: flex;
                         flex-direction: column;
-                        p{}
-                            
                         ul{
                             text-align: justify;
                             animation: none;
@@ -190,6 +312,9 @@
                         }
                         
                     }
+                }
+                .tarjetas{
+                    height: 100vh;
                 }
             }
             footer{
@@ -203,8 +328,8 @@
                     }
                     div{
                         .logoWhatsapp{
-                            top: 45rem; 
-                            right: 0.5rem;
+                            top: 35rem; 
+                            right: 1rem;
                             width: 10%;
                             animation-name: nombre;
                             animation-duration: 2s;
