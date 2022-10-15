@@ -29,15 +29,15 @@
                 }
                 /*menu servicios con bootstrap*/
                 .menu{
-                    /*margin-left: 5rem;
-                    padding-bottom: 1.3rem;
-                    position: fixed;*/
                     nav{
+                        margin-left: 12rem;
+                        top: 0;
+                        position: absolute;
                         button{
                             .navbar-toggler-icon{
                                 filter: brightness(0) invert(1);
-                            }   
-                        }
+                            }  
+                        } 
                         .collapse{
                             h2{
                                 .navbar-nav{
@@ -87,6 +87,8 @@
                 flex-direction: column;
                 justify-content:center;
                 h3{
+                    background-color: rgba(0, 8, 62, 0.4);
+                    border-radius: 10px;
                     text-align: center;
                     font-size: 30pt;
                     display: flex;
@@ -236,7 +238,7 @@
                 }
                 div{
                     .logoWhatsapp{
-                        top: 10rem; 
+                        top: 15rem; 
                         right: 0;
                         width: 20%;
                         animation-name: nombre;
@@ -254,7 +256,7 @@
     }
 }
 
-@media (max-width:991px)  {
+@media (max-width:990px)  {
     body{
         min-height:100vh;
         width: 100%;
@@ -341,7 +343,7 @@
                     }
                     div{
                         .logoWhatsapp{
-                            top: 35rem; 
+                            top: 40rem; 
                             right: 1rem;
                             width: 10%;
                             animation-name: nombre;
