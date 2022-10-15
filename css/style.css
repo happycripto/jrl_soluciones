@@ -82,8 +82,8 @@ main .socialContacto ul {
   justify-content: center;
   list-style: none; }
   main .socialContacto ul li a .icon-redes {
-    width: 30%;
-    margin-top: 5rem; }
+    width: 40%;
+    margin-top: 10rem; }
 
 /*estilos de tarjetas*/
 .mainTarjetas {
@@ -282,10 +282,6 @@ footer {
   border-top: solid 1px #dadaf5;
   /*edicion del copyricht */
   /* estilo y posicion imagen flotante Whatsapp */ }
-  footer .flex-container {
-    display: flex;
-    flex-flow: nowrap;
-    flex-direction: row; }
   footer section .copyPrincipal .tamanoCopy {
     color: #ebf1f9;
     font-size: 20pt; }
