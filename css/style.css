@@ -82,7 +82,7 @@ main .socialContacto ul {
   justify-content: center;
   list-style: none; }
   main .socialContacto ul li a .icon-redes {
-    width: 50%;
+    width: 30%;
     margin-top: 5rem; }
 
 /*estilos de tarjetas*/
@@ -223,50 +223,44 @@ header {
   z-index: 100;
   background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
   border-bottom: solid 1px #dadaf5;
-  /*estilos del logo en el header*/
-  /* estilo del header padre flex */
-  /* estilo del logo */
-  /* estilo titulo empresa */
-  /* estilo link contacto*/ }
-  header div .logoTitulo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center; }
+  /* estilo del header padre flex */ }
   header .padre-flex {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    align-items: center; }
-  header div div .logoEncabezado a img {
-    width: 80%;
-    margin-bottom: 5px;
-    margin-left: 1rem; }
-  header div div .tituloEncabezado h1 a {
-    text-decoration: none;
-    list-style: none;
-    color: #002B5B;
-    font-size: 18pt;
-    flex-wrap: nowrap;
-    display: flex;
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 200px; }
-  header div section .menu-hamburguesa {
-    margin-left: 13rem;
-    margin-top: -1rem;
-    position: absolute;
-    /*width: 800px;*/ }
-    header div section .menu-hamburguesa div h2 {
-      font-size: 10pt; }
-  header div .cajaContacto {
-    display: flex;
-    align-self: end;
-    justify-content: flex-end; }
-  header div .cajaContacto h2 a {
-    text-decoration: none;
-    list-style: none;
-    font-size: 13pt; }
+    align-items: center;
+    /*estilos del logo en el header*/ }
+    header .padre-flex .logoTitulo {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center; }
+      header .padre-flex .logoTitulo .logoEncabezado
+a {
+        /* estilo del logo */ }
+        header .padre-flex .logoTitulo .logoEncabezado
+a img {
+          width: 50px;
+          margin-bottom: 5px;
+          /*margin-left: 0.5rem;*/ }
+      header .padre-flex .logoTitulo .tituloEncabezado h1 {
+        /* estilo titulo empresa */ }
+        header .padre-flex .logoTitulo .tituloEncabezado h1 a {
+          text-decoration: none;
+          list-style: none;
+          color: #002B5B;
+          font-size: 18pt;
+          flex-wrap: nowrap;
+          display: flex;
+          margin-top: 10px;
+          margin-left: 10px;
+          width: 200px; }
+    header .padre-flex section .menu-hamburguesa {
+      margin-left: 13rem;
+      margin-top: -1rem;
+      position: absolute; }
+      header .padre-flex section .menu-hamburguesa div h2 {
+        font-size: 10pt; }
 
 /*estilos de lista redes en el main*/
 main {
@@ -334,11 +328,14 @@ footer {
             font-size: 18pt;
             display: flex; }
       body header div .menu {
-        margin-right: 2rem;
-        margin-top: -1.5rem;
-        position: fixed; }
-        body header div .menu .navbar-toggler-icon {
+        /*margin-left: 5rem;
+                    padding-bottom: 1.3rem;
+                    position: fixed;*/ }
+        body header div .menu nav button .navbar-toggler-icon {
           filter: brightness(0) invert(1); }
+        body header div .menu nav .collapse h2 .navbar-nav {
+          background-color: rgba(0, 8, 62, 0.7);
+          border-radius: 10px; }
     body .flex-container {
       flex-flow: wrap; }
     body main {
@@ -561,7 +558,7 @@ footer {
     100% {
       transform: translateY(0px); } } }
 
-@media (min-width: 992px) {
+@media (min-width: 1000px) {
   body {
     overflow-x: hidden; }
     body main {
@@ -634,7 +631,7 @@ footer {
 body {
   min-height: 100vh;
   width: 100%;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   /* propiedades del contenedor padre */ }
   body .contenedor {
     min-height: 100vh;

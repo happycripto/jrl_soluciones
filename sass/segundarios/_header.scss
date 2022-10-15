@@ -9,64 +9,55 @@ header{
     z-index:100;
     background-image:linear-gradient($color-header);
     border-bottom: solid 1px $border;
-        /*estilos del logo en el header*/
-        div {  
-            .logoTitulo{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                align-items: center;
-            }
-        }    
     /* estilo del header padre flex */
     .padre-flex{
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
         align-items: center;
-    }
-    /* estilo del logo */
-    div div .logoEncabezado a img{
-        width: 80%;
-        margin-bottom: 5px;
-        margin-left: 1rem;
-    }
-    /* estilo titulo empresa */
-    div div .tituloEncabezado h1 a{
-        text-decoration: none;
-        list-style: none;
-        color: $azul-Oscuro ;
-        font-size: 18pt;
-        flex-wrap: nowrap;
-        display: flex;
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 200px;
-    }
-    div{
+        /*estilos del logo en el header*/
+        .logoTitulo{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                .logoEncabezado 
+                    a {
+                        /* estilo del logo */
+                        img{
+                            width: 50px;
+                            margin-bottom: 5px;
+                            /*margin-left: 0.5rem;*/
+                        }
+                    }
+                .tituloEncabezado{
+                    h1{ 
+                        /* estilo titulo empresa */
+                        a{
+                            text-decoration: none;
+                            list-style: none;
+                            color: $azul-Oscuro ;
+                            font-size: 18pt;
+                            flex-wrap: nowrap;
+                            display: flex;
+                            margin-top: 10px;
+                            margin-left: 10px;
+                            width: 200px;
+                        }  
+                    }
+                }           
+        }
         section{
             .menu-hamburguesa{
                 margin-left: 13rem;
                 margin-top: -1rem;
                 position: absolute;
-                /*width: 800px;*/
                 div{
                     h2{
                         font-size: 10pt;
                     } 
                 }
             }
-        }
-    }     
-    div .cajaContacto{
-        display: flex;
-        align-self: end;
-        justify-content: flex-end;
-    }
-    /* estilo link contacto*/
-    div .cajaContacto h2 a{
-        text-decoration: none;
-        list-style: none;
-        font-size: 13pt;
+        }     
     }
 }

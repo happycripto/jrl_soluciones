@@ -29,14 +29,27 @@
                 }
                 /*menu servicios con bootstrap*/
                 .menu{
-                        margin-right: 2rem;
-                        margin-top: -1.5rem;
-                        position: fixed;
+                    /*margin-left: 5rem;
+                    padding-bottom: 1.3rem;
+                    position: fixed;*/
+                    nav{
+                        button{
                             .navbar-toggler-icon{
                                 filter: brightness(0) invert(1);
+                            }   
                         }
-                }
-                
+                        .collapse{
+                            h2{
+                                .navbar-nav{
+                                            background-color: rgba(0, 8, 62, 0.7);
+                                            border-radius: 10px;
+                                            
+                                }
+                            }
+                            
+                        }
+                    }       
+                }  
             }
         }
         .flex-container{
@@ -346,22 +359,30 @@
         }
     }    
 
-@media (min-width:992px){
+@media (min-width:1000px){
     body{
         overflow-x: hidden;
         main{
             grid-area: main;
             min-height: 100vh;
-                    /* estilo tamaño Banner principal imagen central */
-                    .image-container{
-                        img{
-                            object-fit:cover;
-                            min-height: 100vh;
-                        }
+                /* estilo tamaño Banner principal imagen central */
+                .image-container{
+                    img{
+                        object-fit:cover;
+                        min-height: 100vh;
                     }
-                .social ul li a .icon-redes{
-                    width: 18%;
-                    margin-top: 10px; 
+                }
+                .social{ 
+                    ul{
+                        li{ 
+                            a{ 
+                                .icon-redes{
+                                    width: 18%;
+                                    margin-top: 10px
+                                }
+                            }
+                        }
+                    }                 
                 }
                 .contenedorAnimado{
                     width: 800px;
