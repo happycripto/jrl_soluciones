@@ -60,30 +60,34 @@ main {
     width: 100%;
     min-height: 100%; }
 
-main .cajaFormulario {
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  margin-top: 8rem; }
-  main .cajaFormulario .formulario {
-    width: 600px;
-    height: 270px;
-    text-align: center; }
-    main .cajaFormulario .formulario .tituloformulario {
+main {
+  /*estilos de la caja formulario contacto*/
+  /*estilos de los logos de redes sociales solo para html contacto*/ }
+  main .cajaFormulario {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem; }
+    main .cajaFormulario .formulario {
+      width: 600px;
+      height: 270px;
       text-align: center; }
-    main .cajaFormulario .formulario .imputFormulario {
-      text-align: left; }
-    main .cajaFormulario .formulario .btn {
-      margin-top: 1rem; }
-
-main .socialContacto ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none; }
-  main .socialContacto ul li a .icon-redes {
-    width: 40%;
-    margin-top: 10rem; }
+      main .cajaFormulario .formulario .tituloformulario {
+        text-align: center; }
+      main .cajaFormulario .formulario .imputFormulario {
+        text-align: left; }
+        main .cajaFormulario .formulario .imputFormulario .titulosImput {
+          font-size: 10pt; }
+      main .cajaFormulario .formulario .btn {
+        margin-top: 1rem; }
+  main .socialContacto ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none; }
+    main .socialContacto ul li a .icon-redes {
+      width: 40%;
+      margin-top: 10rem; }
 
 /*estilos de tarjetas*/
 .mainTarjetas {
@@ -107,15 +111,16 @@ main .cajaPresentacion {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 840px; }
+  height: 600px;
+  align-items: center; }
   main .cajaPresentacion .imgSolucionando {
     align-self: end; }
-  main .cajaPresentacion .videoPresentacion {
-    position: absolute;
-    left: 500px;
-    top: 200px; }
+    main .cajaPresentacion .imgSolucionando img {
+      width: 100%; }
   main .cajaPresentacion .imgRendimiento {
-    align-self: end; }
+    align-self: start; }
+    main .cajaPresentacion .imgRendimiento img {
+      width: 100%; }
 
 main .presentacionEquipo {
   display: flex;
@@ -124,9 +129,8 @@ main .presentacionEquipo {
   /* posicion de foto del team jrl*/ }
   main .presentacionEquipo div {
     text-align: center;
-    padding: 1.5rem;
     align-items: center;
-    width: 1000px;
+    width: 600px;
     /* Team JRL */
     /* Edicion de texto momentaneo team JRL */ }
     main .presentacionEquipo div .teamTitulo {
@@ -134,9 +138,15 @@ main .presentacionEquipo {
       font-size: 30pt;
       font-family: 'Merriweather', serif; }
     main .presentacionEquipo div .conceptoEquipo {
+      padding-left: 1rem;
+      padding-right: 1rem;
       text-align: justify;
       line-height: 1.6;
       box-sizing: border-box; }
+    main .presentacionEquipo div .imgEquipo img {
+      width: 300px;
+      position: relative;
+      margin-left: 30rem; }
 
 main .contenedorServicios {
   display: flex;
@@ -241,8 +251,7 @@ a {
         header .padre-flex .logoTitulo .logoEncabezado
 a img {
           width: 50px;
-          margin-bottom: 5px;
-          /*margin-left: 0.5rem;*/ }
+          margin-bottom: 5px; }
       header .padre-flex .logoTitulo .tituloEncabezado h1 {
         /* estilo titulo empresa */ }
         header .padre-flex .logoTitulo .tituloEncabezado h1 a {
@@ -255,14 +264,10 @@ a img {
           margin-top: 10px;
           margin-left: 10px;
           width: 200px; }
-    header .padre-flex section .menu-hamburguesa {
-      /*margin-left: 13rem;
-                margin-top: -1rem;
-                position: absolute;*/ }
-      header .padre-flex section .menu-hamburguesa div h2 {
-        font-size: 10pt; }
+    header .padre-flex section .menu-hamburguesa div h2 {
+      font-size: 10pt; }
 
-/*estilos de lista redes en el main*/
+/*estilos de lista redes en el main para destok*/
 main {
   background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f); }
   main .social ul {
@@ -321,30 +326,26 @@ footer {
             width: 200px;
             font-size: 18pt;
             display: flex; }
-      body header div .menu nav {
-        margin-left: 12rem;
+      body header div .menu .menu-hamburguesa {
+        margin-left: 13rem;
         top: 0;
         position: absolute; }
-        body header div .menu nav button .navbar-toggler-icon {
+        body header div .menu .menu-hamburguesa button .navbar-toggler-icon {
           filter: brightness(0) invert(1); }
-        body header div .menu nav .collapse h2 .navbar-nav {
+        body header div .menu .menu-hamburguesa .collapse h2 .navbar-nav {
           background-color: rgba(0, 8, 62, 0.7);
           border-radius: 10px; }
     body .flex-container {
       flex-flow: wrap; }
     body main {
       min-height: 100vh;
-      /*estilos html servicio mobile*/ }
+      /*estilo de imagen de background planeta*/
+      /*estilos y efecto de el texto*/
+      /*estilos html contacto mobile*/
+      /*estilos html servicio mobile*/
+      /*estilos de html quienes somos*/ }
       body main .social ul {
-        display: none;
-        flex-direction: row;
-        position: fixed;
-        margin-top: 20.5rem; }
-        body main .social ul li {
-          text-decoration: none;
-          list-style: none; }
-          body main .social ul li a .icon-redes {
-            width: 80px; }
+        display: none; }
       body main .image-container img {
         object-fit: cover;
         min-height: 100vh; }
@@ -368,7 +369,6 @@ footer {
             body main .contenedorAnimado h3 ul li {
               font-size: 12pt; }
       body main .cajaFormulario {
-        /*height: 50vh;*/
         display: flex;
         justify-content: center;
         margin-top: 4rem; }
@@ -379,7 +379,8 @@ footer {
           body main .cajaFormulario .formulario .tituloformulario {
             text-align: center; }
           body main .cajaFormulario .formulario .imputFormulario {
-            text-align: left; }
+            text-align: left;
+            font-size: 5pt; }
           body main .cajaFormulario .formulario .btn {
             margin-top: 1rem; }
       body main .contenedorServicios {
@@ -465,6 +466,47 @@ footer {
               padding-right: 20px;
               font-size: 8pt;
               text-align: justify; }
+      body main .cajaPresentacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: none;
+        height: 100vh;
+        align-items: center; }
+        body main .cajaPresentacion .imgSolucionando {
+          display: none; }
+        body main .cajaPresentacion .imgRendimiento {
+          display: none; }
+        body main .cajaPresentacion .videoPresentacion iframe {
+          width: 390px;
+          height: 200px;
+          position: absolute;
+          margin-left: 0.5rem;
+          top: 9rem; }
+      body main .presentacionEquipo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* posicion de foto del team jrl*/ }
+        body main .presentacionEquipo div {
+          text-align: center;
+          align-items: center;
+          width: 400px;
+          position: absolute;
+          top: 27rem;
+          /* Team JRL */
+          /* Edicion de texto momentaneo team JRL */ }
+          body main .presentacionEquipo div .teamTitulo {
+            color: #002B5B;
+            font-size: 10pt;
+            font-family: 'Merriweather', serif; }
+          body main .presentacionEquipo div .conceptoEquipo {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            text-align: justify;
+            line-height: 1.6;
+            box-sizing: border-box; }
+          body main .presentacionEquipo div .imgEquipo {
+            display: none; }
     body footer section {
       height: 0.8rem; }
       body footer section .copyPrincipal .tamanoCopy {
@@ -473,17 +515,7 @@ footer {
       body footer section div .logoWhatsapp {
         top: 15rem;
         right: 0;
-        width: 20%;
-        animation-name: nombre;
-        animation-duration: 2s;
-        animation-iteration-count: infinite; }
-  @keyframes nombre {
-    0% {
-      transform: translateY(0); }
-    50% {
-      transform: translateY(7px); }
-    100% {
-      transform: translateY(0px); } } }
+        width: 20%; } }
 
 @media (max-width: 990px) {
   body {
@@ -506,8 +538,15 @@ footer {
             width: 200px;
             font-size: 18pt;
             display: flex; }
-      body header div .menu .menu-hamburguesa .navbar-toggler-icon {
-        filter: brightness(0) invert(1); }
+      body header div .menu nav {
+        margin-left: 30rem;
+        top: 0;
+        position: absolute; }
+        body header div .menu nav button .navbar-toggler-icon {
+          filter: brightness(0) invert(1); }
+        body header div .menu nav .collapse h2 .navbar-nav {
+          background-color: rgba(0, 8, 62, 0.7);
+          border-radius: 10px; }
     body .flex-container {
       flex-flow: wrap; }
     body main {
@@ -564,9 +603,6 @@ footer {
       body main .image-container img {
         object-fit: cover;
         min-height: 100vh; }
-      body main .social ul li a .icon-redes {
-        width: 18%;
-        margin-top: 10px; }
       body main .contenedorAnimado {
         width: 800px;
         height: 45px;

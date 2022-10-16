@@ -19,7 +19,7 @@
                         width: 100%;
                         h1{
                             a{
-                                width: 200px;
+                            width: 200px;
                             font-size: 18pt;
                             display: flex;
                             }
@@ -29,8 +29,8 @@
                 }
                 /*menu servicios con bootstrap*/
                 .menu{
-                    nav{
-                        margin-left: 12rem;
+                    .menu-hamburguesa{
+                        margin-left: 13rem;
                         top: 0;
                         position: absolute;
                         button{
@@ -41,9 +41,8 @@
                         .collapse{
                             h2{
                                 .navbar-nav{
-                                            background-color: rgba(0, 8, 62, 0.7);
-                                            border-radius: 10px;
-                                            
+                                    background-color: rgba(0, 8, 62, 0.7);
+                                    border-radius: 10px;
                                 }
                             }
                             
@@ -60,20 +59,9 @@
             .social {
                 ul{
                     display: none;
-                    flex-direction: row;
-                    position:fixed;
-                    margin-top: 20.5rem;
-                    li{
-                        text-decoration: none;
-                        list-style: none;
-                        a{
-                            .icon-redes{
-                                width: 80px;
-                            }
-                        }
-                    }
                 }
             }
+            /*estilo de imagen de background planeta*/
             .image-container {
                 img {
                     object-fit:cover;
@@ -81,6 +69,7 @@
                     
                 }
             }
+            /*estilos y efecto de el texto*/
             .contenedorAnimado{
                 width: 320px;
                 overflow:visible;
@@ -102,12 +91,10 @@
                             font-size: 12pt;
                         }
                     }
-                    
-                    
                 }
             }
+            /*estilos html contacto mobile*/
             .cajaFormulario{
-                /*height: 50vh;*/
                 display: flex;
                 justify-content: center;
                 margin-top: 4rem;
@@ -120,6 +107,7 @@
                         }
                         .imputFormulario{
                             text-align: left;
+                            font-size: 5pt;
                         }
                         .btn{
                             margin-top: 1rem;
@@ -227,6 +215,60 @@
                     }    
                 }
             }
+            /*estilos de html quienes somos*/
+            .cajaPresentacion{
+                display: flex;
+                flex-direction: row;
+                justify-content: none;
+                height: 100vh;  
+                align-items: center;
+                .imgSolucionando{
+                    display: none;
+                }
+                .imgRendimiento{
+                    display: none;
+                }
+                .videoPresentacion{
+                    iframe{
+                        width:390px ;
+                        height:200px;
+                        position:absolute;
+                        margin-left: 0.5rem;
+                        top: 9rem;
+                    }
+                }
+            }
+            .presentacionEquipo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* posicion de foto del team jrl*/
+                div{
+                    text-align: center;
+                    align-items: center;
+                    width: 400px;
+                    position: absolute;
+                    top: 27rem;
+                    /* Team JRL */
+                    .teamTitulo{
+                        color: #002B5B;
+                        font-size: 10pt;
+                        font-family:'Merriweather', serif;
+                    }
+                    /* Edicion de texto momentaneo team JRL */
+                    .conceptoEquipo{
+                        
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        text-align: justify;
+                        line-height: 1.6;
+                        box-sizing:border-box;
+                    }
+                    .imgEquipo{
+                        display: none;
+                    }
+                }
+            }
         }
         footer{
             section{
@@ -242,13 +284,6 @@
                         top: 15rem; 
                         right: 0;
                         width: 20%;
-                        animation-name: nombre;
-                        animation-duration: 2s;
-                        animation-iteration-count: infinite;
-                        @keyframes nombre {
-                            0% {transform: translateY(0); }
-                            50% {transform: translateY(7px); }
-                            100% {transform: translateY(0px); } }
                     }
                 }
                 
@@ -287,11 +322,25 @@
                     }
                     /*menu servicios con bootstrap*/
                     .menu{
-                        .menu-hamburguesa{
-                            
-                            .navbar-toggler-icon {
+                        nav{
+                            margin-left: 30rem;
+                            top: 0;
+                            position: absolute;
+                            button{
+                                .navbar-toggler-icon{
                                     filter: brightness(0) invert(1);
+                                }  
+                            } 
+                            .collapse{
+                                h2{
+                                    .navbar-nav{
+                                                background-color: rgba(0, 8, 62, 0.7);
+                                                border-radius: 10px;
+                                                
+                                    }
                                 }
+                                
+                            }
                         }
                     }
                 }
@@ -374,18 +423,6 @@
                         object-fit:cover;
                         min-height: 100vh;
                     }
-                }
-                .social{ 
-                    ul{
-                        li{ 
-                            a{ 
-                                .icon-redes{
-                                    width: 18%;
-                                    margin-top: 10px
-                                }
-                            }
-                        }
-                    }                 
                 }
                 .contenedorAnimado{
                     width: 800px;

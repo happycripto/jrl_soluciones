@@ -6,17 +6,22 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 840px;
+        height: 600px;
+        
+        align-items: center;
         .imgSolucionando{
             align-self: end;
             
-        }
-        .videoPresentacion{
-            position: absolute;
-            left: 500px; top: 200px;
+            img{
+                width: 100%;
+            }
         }
         .imgRendimiento{
-            align-self: end;
+            align-self: start;
+            
+            img{
+                width: 100%;
+            }
         }
     }
     .presentacionEquipo{
@@ -26,9 +31,8 @@ main{
         /* posicion de foto del team jrl*/
         div{
             text-align: center;
-            padding: 1.5rem;
             align-items: center;
-            width: 1000px;
+            width: 600px;
             /* Team JRL */
             .teamTitulo{
                 color: #002B5B;
@@ -37,9 +41,18 @@ main{
             }
             /* Edicion de texto momentaneo team JRL */
             .conceptoEquipo{
+                padding-left: 1rem;
+                padding-right: 1rem;
                 text-align: justify;
                 line-height: 1.6;
                 box-sizing:border-box;
+            }
+            .imgEquipo{
+                img{
+                    width: 300px;
+                    position: relative;
+                    margin-left: 30rem;
+                }
             }
         }
     }  
