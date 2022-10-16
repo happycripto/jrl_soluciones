@@ -289,20 +289,20 @@
                         padding-top: 0.1rem;
                     } 
                 }
-                /*.div{
+                div{
                     .logoWhatsapp{
-                        top: 20rem; 
+                        top: 40rem; 
                         right: 0;
-                        width: 20%;
+                        width: 10%;
                     }
-                }*/
+                }
                 
             }
         }
     }
 }
 
-@media (max-width:990px)  {
+@media (max-width:990px) and (min-width: 700px) {
     body{
         min-height:100vh;
         width: 100%;
@@ -332,8 +332,8 @@
                     }
                     /*menu servicios con bootstrap*/
                     .menu{
-                        nav{
-                            margin-left: 30rem;
+                        .menu-hamburguesa{
+                            margin-left: 28rem;
                             top: 0;
                             position: absolute;
                             button{
@@ -344,14 +344,13 @@
                             .collapse{
                                 h2{
                                     .navbar-nav{
-                                                background-color: rgba(0, 8, 62, 0.7);
-                                                border-radius: 10px;
-                                                
+                                        background-color: rgba(0, 8, 62, 0.7);
+                                        border-radius: 10px;
                                     }
                                 }
                                 
                             }
-                        }
+                        }       
                     }
                 }
             }

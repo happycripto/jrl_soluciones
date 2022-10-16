@@ -262,8 +262,10 @@ a img {
           margin-top: 10px;
           margin-left: 10px;
           width: 200px; }
-    header .padre-flex section .menu-hamburguesa div h2 {
-      font-size: 10pt; }
+    header .padre-flex section .menu-hamburguesa {
+      margin-left: 10rem; }
+      header .padre-flex section .menu-hamburguesa div h2 {
+        font-size: 10pt; }
 
 /*estilos de lista redes en el main para destok*/
 main {
@@ -293,7 +295,10 @@ footer {
     width: 4%;
     animation-name: nombre;
     animation-duration: 2s;
-    animation-iteration-count: infinite; }
+    animation-iteration-count: infinite;
+    top: 50rem;
+    right: 0.5rem;
+    width: 5%; }
 
 @keyframes nombre {
   0% {
@@ -511,19 +516,16 @@ footer {
       margin-bottom: 1rem;
       text-align: center; }
     body footer section {
-      height: 0.8rem;
-      /*.div{
-                    .logoWhatsapp{
-                        top: 20rem; 
-                        right: 0;
-                        width: 20%;
-                    }
-                }*/ }
+      height: 0.8rem; }
       body footer section .copyPrincipal .tamanoCopy {
         font-size: 8pt;
-        padding-top: 0.1rem; } }
+        padding-top: 0.1rem; }
+      body footer section div .logoWhatsapp {
+        top: 40rem;
+        right: 0;
+        width: 10%; } }
 
-@media (max-width: 990px) {
+@media (max-width: 990px) and (min-width: 700px) {
   body {
     min-height: 100vh;
     width: 100%;
@@ -545,13 +547,13 @@ footer {
             width: 200px;
             font-size: 18pt;
             display: flex; }
-      body header div .menu nav {
-        margin-left: 30rem;
+      body header div .menu .menu-hamburguesa {
+        margin-left: 28rem;
         top: 0;
         position: absolute; }
-        body header div .menu nav button .navbar-toggler-icon {
+        body header div .menu .menu-hamburguesa button .navbar-toggler-icon {
           filter: brightness(0) invert(1); }
-        body header div .menu nav .collapse h2 .navbar-nav {
+        body header div .menu .menu-hamburguesa .collapse h2 .navbar-nav {
           background-color: rgba(0, 8, 62, 0.7);
           border-radius: 10px; }
     body .flex-container {
