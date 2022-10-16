@@ -91,17 +91,15 @@ main {
 
 /*estilos de tarjetas*/
 .mainTarjetas {
-  height: 100vh;
   justify-content: space-around; }
   .mainTarjetas .tarjetas {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 50vh;
     flex-wrap: wrap; }
     .mainTarjetas .tarjetas .card {
       display: flex;
-      margin-top: 6rem;
+      margin-top: 10rem;
       margin-bottom: 5rem;
       text-align: center; }
 
@@ -507,21 +505,30 @@ footer {
             box-sizing: border-box; }
           body main .presentacionEquipo div .imgEquipo {
             display: none; }
+    body .mainTarjetas .tarjetas .card {
+      display: flex;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: center; }
     body footer section {
-      height: 0.8rem; }
+      height: 0.8rem;
+      /*.div{
+                    .logoWhatsapp{
+                        top: 20rem; 
+                        right: 0;
+                        width: 20%;
+                    }
+                }*/ }
       body footer section .copyPrincipal .tamanoCopy {
         font-size: 8pt;
-        padding-top: 0.1rem; }
-      body footer section div .logoWhatsapp {
-        top: 15rem;
-        right: 0;
-        width: 20%; } }
+        padding-top: 0.1rem; } }
 
 @media (max-width: 990px) {
   body {
     min-height: 100vh;
     width: 100%;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    /*estilos de html presentacion quienes somos*/ }
     body header div {
       /*Logo y titulo*/
       /*menu servicios con bootstrap*/ }
@@ -550,7 +557,8 @@ footer {
     body .flex-container {
       flex-flow: wrap; }
     body main {
-      min-height: 100vh; }
+      min-height: 100vh;
+      overflow-x: hidden; }
       body main .image-container img {
         object-fit: cover;
         min-height: 100vh; }
@@ -561,6 +569,8 @@ footer {
         flex-direction: column;
         justify-content: center; }
         body main .contenedorAnimado h3 {
+          background-color: rgba(0, 8, 62, 0.4);
+          border-radius: 10px;
           text-align: center;
           font-size: 30pt;
           display: flex;
@@ -571,8 +581,37 @@ footer {
             line-height: 2rem; }
             body main .contenedorAnimado h3 ul li {
               font-size: 12pt; }
-      body main .tarjetas {
-        height: 100vh; }
+    body .mainTarjetas {
+      overflow-x: hidden; }
+      body .mainTarjetas .tarjetas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; }
+        body .mainTarjetas .tarjetas .card {
+          display: flex;
+          margin-top: 2rem;
+          margin-bottom: 0rem;
+          margin-left: 2rem;
+          text-align: center; }
+    body .cajaPresentacion .imgSolucionando {
+      align-self: end; }
+      body .cajaPresentacion .imgSolucionando img {
+        width: 250px; }
+    body .cajaPresentacion .imgRendimiento {
+      align-self: start; }
+      body .cajaPresentacion .imgRendimiento img {
+        width: 250px; }
+    body .cajaPresentacion .videoPresentacion iframe {
+      width: 490px;
+      height: 260px;
+      position: absolute;
+      top: 13rem;
+      left: 10rem; }
+    body .presentacionEquipo div .imgEquipo img {
+      width: 220px;
+      position: relative;
+      margin-left: 29rem; }
     body footer section {
       height: 0.8rem; }
       body footer section .copyPrincipal .tamanoCopy {
@@ -581,7 +620,7 @@ footer {
       body footer section div .logoWhatsapp {
         top: 40rem;
         right: 1rem;
-        width: 10%;
+        width: 8%;
         animation-name: nombre;
         animation-duration: 2s;
         animation-iteration-count: infinite; }
@@ -651,7 +690,21 @@ footer {
     96% {
       margin-top: 0; }
     100% {
-      margin-top: 0; } } }
+      margin-top: 0; } }
+    body .mainTarjetas .tarjetas .card {
+      display: flex;
+      margin-top: 10rem;
+      margin-bottom: 5rem;
+      text-align: center; }
+    body .mainTarjetas .social ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none; }
+      body .mainTarjetas .social ul li a .icon-redes {
+        width: 30%;
+        margin-top: 25rem;
+        margin-left: 4rem; } }
 
 /* reset */
 * {
@@ -663,7 +716,7 @@ footer {
 body {
   min-height: 100vh;
   width: 100%;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
   /* propiedades del contenedor padre */ }
   body .contenedor {
     min-height: 100vh;

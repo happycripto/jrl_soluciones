@@ -7,18 +7,15 @@ main{
         flex-direction: row;
         justify-content: space-between;
         height: 600px;
-        
         align-items: center;
         .imgSolucionando{
             align-self: end;
-            
             img{
                 width: 100%;
             }
         }
         .imgRendimiento{
             align-self: start;
-            
             img{
                 width: 100%;
             }

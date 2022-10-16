@@ -270,6 +270,16 @@
                 }
             }
         }
+        .mainTarjetas{
+            .tarjetas{
+                .card{
+                    display: flex;  
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                }
+            }
+        }
         footer{
             section{
                 height: 0.8rem;
@@ -279,13 +289,13 @@
                         padding-top: 0.1rem;
                     } 
                 }
-                div{
+                /*.div{
                     .logoWhatsapp{
-                        top: 15rem; 
+                        top: 20rem; 
                         right: 0;
                         width: 20%;
                     }
-                }
+                }*/
                 
             }
         }
@@ -313,8 +323,8 @@
                             h1{
                                 a{
                                     width: 200px;
-                                font-size: 18pt;
-                                display: flex;
+                                    font-size: 18pt;
+                                    display: flex;
                                 }
                             }
                             
@@ -350,6 +360,7 @@
             }
             main{ 
                 min-height: 100vh;
+                overflow-x: hidden;
                 .image-container{
                     img{
                         object-fit:cover;
@@ -363,6 +374,8 @@
                     flex-direction: column;
                     justify-content:center ;
                     h3{
+                        background-color: rgba(0, 8, 62, 0.4);
+                    border-radius: 10px;
                         text-align: center;
                         font-size: 30pt;
                         display: flex;
@@ -378,10 +391,60 @@
                         
                     }
                 }
+                
+            }
+            .mainTarjetas{
+                overflow-x: hidden;
                 .tarjetas{
-                    height: 100vh;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:center;
+                    flex-wrap: wrap;
+                    .card{
+                        display: flex;  
+                        margin-top: 2rem;
+                        margin-bottom: 0rem;
+                        margin-left: 2rem;
+                        text-align: center;
+                    }
                 }
             }
+            /*estilos de html presentacion quienes somos*/
+            .cajaPresentacion{
+                .imgSolucionando{
+                    align-self: end;
+                    img{
+                        width: 250px;
+                        
+                    }
+                }
+                .imgRendimiento{
+                    align-self: start;
+                    img{
+                        width: 250px;
+                    }
+                }
+                .videoPresentacion{
+                    iframe{
+                        width:490px ;
+                        height:260px;
+                        position: absolute;
+                        top:13rem;
+                        left: 10rem;
+                    }
+                }
+            }
+            .presentacionEquipo{
+                div{
+                    .imgEquipo{
+                        img{
+                            width: 220px;
+                            position: relative;
+                            margin-left: 29rem;
+                        }
+                    }
+                }
+            }   
             footer{
                 section{
                     height: 0.8rem;
@@ -395,7 +458,7 @@
                         .logoWhatsapp{
                             top: 40rem; 
                             right: 1rem;
-                            width: 10%;
+                            width: 8%;
                             animation-name: nombre;
                             animation-duration: 2s;
                             animation-iteration-count: infinite;
@@ -467,6 +530,33 @@
                             }
                         }
                     }
+            }
+        }
+        .mainTarjetas{
+            .tarjetas{
+                .card{
+                    display: flex;  
+                    margin-top: 10rem;
+                    margin-bottom: 5rem;
+                    text-align: center;
+                }
+        }
+            .social{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    list-style: none;
+                    li{
+                        a{
+                            .icon-redes{
+                            width: 30%;
+                            margin-top: 25rem;
+                            margin-left: 4rem;
+                            }
+                        }
+                    }
+                }  
             }
         }
     }
