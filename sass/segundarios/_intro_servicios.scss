@@ -3,17 +3,19 @@
 //nestin//
 /*estilos de tarjetas*/
 .mainTarjetas{
-    justify-content:space-around;
     .tarjetas{
         display: flex;
         flex-direction: row;
         justify-content:space-around;
         flex-wrap: wrap;
             .card{
-                display: flex;  
-                margin-top: 10rem;
-                margin-bottom: 5rem;
-                text-align: center;
+                .card-title{
+                    font-size: 16.5pt;
+                    text-align: center;
+                } 
+                .card-text{
+                    text-align: justify;
+                }
             }
     }
 }
