@@ -7,10 +7,11 @@ main{
         flex-direction: column;
         
         .cajaConsultoria{
-            border: solid 2px $blanco;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 16px;
             border-radius: 15px;
             margin: 2rem;
-            width: 750px;
+            width: 700px;
             height: 400px;
             .tituloServicio1{
                 font-size: 12pt;
@@ -36,10 +37,11 @@ main{
             }
         }
         .cajaInnovacion{
-            border: solid 2px $blanco;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 16px;
             border-radius: 15px;
             margin: 2rem;
-            width: 750px;
+            width: 700px;
             height: 400px;
             .tituloServicio2{
                 font-size: 12pt;
@@ -65,10 +67,11 @@ main{
             }  
         }
         .cajaMarketing{
-            border: solid 2px $blanco;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 16px;
             border-radius: 15px;
             margin: 2rem;
-            width: 750px;
+            width: 700px;
             height: 400px;
             .tituloServicio3{
                 font-size: 12pt;

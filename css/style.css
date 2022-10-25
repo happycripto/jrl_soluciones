@@ -61,7 +61,7 @@ main {
     min-height: 100%; }
 
 main {
-  /*estilos de la caja formulario contacto*/
+  /*estilos de la caja formulario contacto */
   /*estilos de los logos de redes sociales solo para html contacto*/ }
   main .cajaFormulario {
     height: 50vh;
@@ -95,11 +95,14 @@ main {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap; }
-  .mainTarjetas .tarjetas .card .card-title {
-    font-size: 16.5pt;
-    text-align: center; }
-  .mainTarjetas .tarjetas .card .card-text {
-    text-align: justify; }
+  .mainTarjetas .tarjetas .card {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 16px; }
+    .mainTarjetas .tarjetas .card .card-body .card-title {
+      font-size: 16.5pt; }
+    .mainTarjetas .tarjetas .card .card-body .card-text {
+      text-align: justify;
+      font-size: 10pt; }
 
 /* --- PRESENTACION.HTML --- */
 /* Posicionamiento Imagenes y video */
@@ -133,7 +136,19 @@ main .presentacionEquipo {
       color: #002B5B;
       font-size: 30pt;
       font-family: 'Merriweather', serif; }
-    main .presentacionEquipo div .conceptoEquipo {
+    main .presentacionEquipo div .conceptoEquipo1 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: justify;
+      line-height: 1.6;
+      box-sizing: border-box; }
+    main .presentacionEquipo div .conceptoEquipo2 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: justify;
+      line-height: 1.6;
+      box-sizing: border-box; }
+    main .presentacionEquipo div .conceptoEquipo3 {
       padding-left: 1rem;
       padding-right: 1rem;
       text-align: justify;
@@ -149,10 +164,11 @@ main .contenedorServicios {
   align-items: center;
   flex-direction: column; }
   main .contenedorServicios .cajaConsultoria {
-    border: solid 2px #ebf1f9;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 16px;
     border-radius: 15px;
     margin: 2rem;
-    width: 750px;
+    width: 700px;
     height: 400px; }
     main .contenedorServicios .cajaConsultoria .tituloServicio1 {
       font-size: 12pt;
@@ -173,10 +189,11 @@ main .contenedorServicios {
         font-size: 8pt;
         text-align: justify; }
   main .contenedorServicios .cajaInnovacion {
-    border: solid 2px #ebf1f9;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 16px;
     border-radius: 15px;
     margin: 2rem;
-    width: 750px;
+    width: 700px;
     height: 400px; }
     main .contenedorServicios .cajaInnovacion .tituloServicio2 {
       font-size: 12pt;
@@ -197,10 +214,11 @@ main .contenedorServicios {
         font-size: 8pt;
         text-align: justify; }
   main .contenedorServicios .cajaMarketing {
-    border: solid 2px #ebf1f9;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 16px;
     border-radius: 15px;
     margin: 2rem;
-    width: 750px;
+    width: 700px;
     height: 400px; }
     main .contenedorServicios .cajaMarketing .tituloServicio3 {
       font-size: 12pt;
@@ -389,7 +407,6 @@ footer {
         flex-direction: column;
         justify-content: center; }
         body main .contenedorServicios .cajaConsultoria {
-          border: solid 2px #ebf1f9;
           border-radius: 15px;
           margin-bottom: 0.5rem;
           width: 350px;
@@ -415,7 +432,6 @@ footer {
               font-size: 8pt;
               text-align: justify; }
         body main .contenedorServicios .cajaInnovacion {
-          border: solid 2px #ebf1f9;
           border-radius: 15px;
           margin-bottom: 0.5rem;
           width: 350px;
@@ -441,7 +457,6 @@ footer {
               font-size: 8pt;
               text-align: justify; }
         body main .contenedorServicios .cajaMarketing {
-          border: solid 2px #ebf1f9;
           border-radius: 15px;
           margin-bottom: 0.5rem;
           width: 350px;
@@ -499,12 +514,17 @@ footer {
             color: #002B5B;
             font-size: 10pt;
             font-family: 'Merriweather', serif; }
-          body main .presentacionEquipo div .conceptoEquipo {
+          body main .presentacionEquipo div .conceptoEquipo1 {
+            font-size: 10pt;
             padding-left: 1rem;
             padding-right: 1rem;
             text-align: justify;
             line-height: 1.6;
             box-sizing: border-box; }
+          body main .presentacionEquipo div .conceptoEquipo2 {
+            display: none; }
+          body main .presentacionEquipo div .conceptoEquipo3 {
+            display: none; }
           body main .presentacionEquipo div .imgEquipo {
             display: none; }
     body .mainTarjetas .tarjetas .card {
@@ -542,9 +562,9 @@ footer {
             font-size: 18pt;
             display: flex; }
       body header div .menu .menu-hamburguesa {
-        margin-left: 28rem;
         top: 0;
-        position: absolute; }
+        position: absolute;
+        right: 10px; }
         body header div .menu .menu-hamburguesa button .navbar-toggler-icon {
           filter: brightness(0) invert(1); }
         body header div .menu .menu-hamburguesa .collapse h2 .navbar-nav {

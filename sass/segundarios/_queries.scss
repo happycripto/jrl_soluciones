@@ -119,9 +119,7 @@
                 align-items: center;
                 flex-direction: column;
                 justify-content: center;
-                
                 .cajaConsultoria{
-                    border: solid 2px $blanco;
                     border-radius: 15px;
                     margin-bottom: 0.5rem;
                     width: 350px;
@@ -152,7 +150,6 @@
                     }
                 }
                 .cajaInnovacion{
-                    border: solid 2px $blanco;
                     border-radius: 15px;
                     margin-bottom: 0.5rem;
                     width: 350px;
@@ -183,7 +180,6 @@
                     }  
                 }
                 .cajaMarketing{
-                    border: solid 2px $blanco;
                     border-radius: 15px;
                     margin-bottom: 0.5rem;
                     width: 350px;
@@ -255,13 +251,19 @@
                         font-family:'Merriweather', serif;
                     }
                     /* Edicion de texto momentaneo team JRL */
-                    .conceptoEquipo{
-                        
+                    .conceptoEquipo1{
+                        font-size: 10pt;
                         padding-left: 1rem;
                         padding-right: 1rem;
                         text-align: justify;
                         line-height: 1.6;
                         box-sizing:border-box;
+                    }
+                    .conceptoEquipo2{
+                        display: none;
+                    }
+                    .conceptoEquipo3{
+                        display: none;
                     }
                     .imgEquipo{
                         display: none;
@@ -329,9 +331,9 @@
                     /*menu servicios con bootstrap*/
                     .menu{
                         .menu-hamburguesa{
-                            margin-left: 28rem;
                             top: 0;
                             position: absolute;
+                            right: 10px;
                             button{
                                 .navbar-toggler-icon{
                                     filter: brightness(0) invert(1);
@@ -370,7 +372,7 @@
                     justify-content:center ;
                     h3{
                         background-color: rgba(0, 8, 62, 0.4);
-                    border-radius: 10px;
+                        border-radius: 10px;
                         text-align: center;
                         font-size: 30pt;
                         display: flex;
