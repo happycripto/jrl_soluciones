@@ -353,15 +353,17 @@ footer {
         right: 10px; }
         body header div .menu .menu-hamburguesa button .navbar-toggler-icon {
           filter: brightness(0) invert(1); }
-    body header .collapse h2 {
-      font-size: 10pt;
+        body header div .menu .menu-hamburguesa .menuDestok {
+          display: none; }
+    body header .colapsomobile h2 {
+      font-size: 8pt;
       text-align: center; }
-      body header .collapse h2 .navbar-nav {
+      body header .colapsomobile h2 .navbar-nav {
         width: 100%;
         position: absolute;
         background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f); }
-        body header .collapse h2 .navbar-nav .nav-item {
-          border-top: solid white 1px; }
+        body header .colapsomobile h2 .navbar-nav .nav-item {
+          border: solid white 1px; }
     body .flex-container {
       flex-flow: wrap; }
     body main {
@@ -432,7 +434,7 @@ footer {
             align-items: center; }
             body main .contenedorServicios .cajaConsultoria div .imgConsultoriaP {
               padding: 1.5rem;
-              padding-top: 0%;
+              padding: 0%;
               width: 150px;
               height: 150px; }
             body main .contenedorServicios .cajaConsultoria div p {
@@ -576,9 +578,17 @@ footer {
         right: 10px; }
         body header div .menu .menu-hamburguesa button .navbar-toggler-icon {
           filter: brightness(0) invert(1); }
-        body header div .menu .menu-hamburguesa .collapse h2 .navbar-nav {
-          background-color: rgba(0, 8, 62, 0.7);
-          border-radius: 10px; }
+        body header div .menu .menu-hamburguesa .menuDestok {
+          display: none; }
+    body header .collapse h2 {
+      font-size: 10pt;
+      text-align: center; }
+      body header .collapse h2 .navbar-nav {
+        width: 100%;
+        position: absolute;
+        background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f); }
+        body header .collapse h2 .navbar-nav .nav-item {
+          border: solid white 1px; }
     body .flex-container {
       flex-flow: wrap; }
     body main {
@@ -653,6 +663,8 @@ footer {
 @media (min-width: 1000px) {
   body {
     overflow-x: hidden; }
+    body header .colapsomobile {
+      display: none; }
     body main {
       grid-area: main;
       min-height: 100vh;
