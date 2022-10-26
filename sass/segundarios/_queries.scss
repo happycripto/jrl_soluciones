@@ -1,3 +1,4 @@
+@import "../utilities/variables";
 
 @media (max-width: 576px) {
     body{
@@ -37,17 +38,23 @@
                                 filter: brightness(0) invert(1);
                             }  
                         } 
-                        .collapse{
-                            h2{
-                                .navbar-nav{
-                                    background-color: rgba(0, 8, 62, 0.7);
-                                    border-radius: 10px;
-                                }
-                            }
-                            
-                        }
                     }       
                 }  
+            }
+            .collapse{
+                h2{
+                    font-size: 10pt;
+                    text-align: center;
+                    .navbar-nav{
+                        width: 100%;
+                        position: absolute;
+                        background-image:linear-gradient($color-header);
+                        .nav-item{
+                            border-top:  solid white 1px;
+                        }
+                    }
+                }
+                
             }
         }
         .flex-container{

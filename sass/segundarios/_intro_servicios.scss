@@ -11,6 +11,10 @@
             .card{
                 text-align: center;
                 box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 16px;
+                transition: transform .1s;
+                &:hover{
+                    transform: scale(1.1);
+                }
                 .card-body{
                     .card-title{
                         font-size: 16.5pt;
