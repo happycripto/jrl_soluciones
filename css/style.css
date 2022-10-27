@@ -383,6 +383,7 @@ footer {
       flex-flow: wrap; }
     body main {
       min-height: 100vh;
+      /*imagenes redes html contacto*/
       /*estilo de imagen de background planeta*/
       /*estilos y efecto de el texto*/
       /*estilos html contacto mobile*/
@@ -390,6 +391,8 @@ footer {
       /*estilos de html quienes somos*/ }
       body main .social ul {
         display: none; }
+      body main .socialContacto ul li a .icon-redes {
+        margin-left: 0; }
       body main .image-container img {
         object-fit: cover;
         min-height: 100vh; }

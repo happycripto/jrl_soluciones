@@ -70,6 +70,18 @@
                     display: none;
                 }
             }
+            /*imagenes redes html contacto*/
+            .socialContacto{
+                ul{
+                    li{
+                        a{
+                            .icon-redes{
+                            margin-left: 0;
+                            }
+                        }
+                    }
+                }         
+            }
             /*estilo de imagen de background planeta*/
             .image-container {
                 img {
