@@ -9,9 +9,13 @@ footer{
     text-align: center;
     border-top: solid 1px $border;
     /*edicion del copyricht */
-    section .copyPrincipal .tamanoCopy{    
-        color: $blanco;
-        font-size: 20pt;
+    section {
+        .copyPrincipal{
+            .tamanoCopy{    
+                color: $blanco;
+                font-size: 13pt;
+            } 
+        }
     }
     /* estilo y posicion imagen flotante Whatsapp */
     section{ 
@@ -22,7 +26,7 @@ footer{
                 animation-name: nombre;
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
-                top: 50rem; 
+                top: 37rem; 
                 right: 0.5rem;
                 width: 5%;
                 @keyframes nombre {

@@ -86,8 +86,9 @@ main {
     justify-content: center;
     list-style: none; }
     main .socialContacto ul li a .icon-redes {
-      width: 40%;
-      margin-top: 10rem; }
+      width: 30%;
+      margin-top: 7rem;
+      margin-left: 5rem; }
 
 /*estilos de tarjetas*/
 .mainTarjetas .tarjetas {
@@ -172,12 +173,14 @@ main .contenedorServicios {
     border-radius: 15px;
     margin: 2rem;
     width: 700px;
-    height: 400px; }
+    height: 400px;
+    transition: transform .1s; }
+    main .contenedorServicios .cajaConsultoria:hover {
+      transform: scale(1.1); }
     main .contenedorServicios .cajaConsultoria .tituloServicio1 {
-      font-size: 12pt;
-      text-decoration: underline;
+      font-size: 20pt;
       text-align: right;
-      margin-right: 18rem;
+      margin-right: 7rem;
       padding-top: 2rem; }
     main .contenedorServicios .cajaConsultoria div {
       display: flex;
@@ -187,22 +190,28 @@ main .contenedorServicios {
         padding-top: 0%;
         width: 300px;
         height: 300px; }
-      main .contenedorServicios .cajaConsultoria div p {
+      main .contenedorServicios .cajaConsultoria div .parrafoConsultoria {
         padding: 2rem;
-        font-size: 8pt;
+        font-size: 10pt;
         text-align: justify; }
+      main .contenedorServicios .cajaConsultoria div .temasServicio {
+        position: absolute;
+        margin-top: 18.5rem;
+        margin-left: 3rem; }
   main .contenedorServicios .cajaInnovacion {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 16px;
     border-radius: 15px;
     margin: 2rem;
     width: 700px;
-    height: 400px; }
+    height: 400px;
+    transition: transform .1s; }
+    main .contenedorServicios .cajaInnovacion:hover {
+      transform: scale(1.1); }
     main .contenedorServicios .cajaInnovacion .tituloServicio2 {
-      font-size: 12pt;
-      text-decoration: underline;
+      font-size: 20pt;
       text-align: right;
-      margin-right: 18rem;
+      margin-right: 24rem;
       padding-top: 2rem; }
     main .contenedorServicios .cajaInnovacion div {
       display: flex;
@@ -214,7 +223,7 @@ main .contenedorServicios {
         height: 300px; }
       main .contenedorServicios .cajaInnovacion div p {
         padding: 2rem;
-        font-size: 8pt;
+        font-size: 10pt;
         text-align: justify; }
   main .contenedorServicios .cajaMarketing {
     background-color: white;
@@ -222,12 +231,14 @@ main .contenedorServicios {
     border-radius: 15px;
     margin: 2rem;
     width: 700px;
-    height: 400px; }
+    height: 400px;
+    transition: transform .1s; }
+    main .contenedorServicios .cajaMarketing:hover {
+      transform: scale(1.1); }
     main .contenedorServicios .cajaMarketing .tituloServicio3 {
-      font-size: 12pt;
-      text-decoration: underline;
+      font-size: 20pt;
       text-align: right;
-      margin-right: 18rem;
+      margin-right: 7rem;
       padding-top: 2rem; }
     main .contenedorServicios .cajaMarketing div {
       display: flex;
@@ -239,7 +250,7 @@ main .contenedorServicios {
         height: 300px; }
       main .contenedorServicios .cajaMarketing div p {
         padding: 2rem;
-        font-size: 8pt;
+        font-size: 10pt;
         text-align: justify; }
 
 /*estilos del header*/
@@ -282,9 +293,13 @@ a img {
           margin-left: 10px;
           width: 200px; }
     header .padre-flex section .menu-hamburguesa {
-      margin-left: 10rem; }
+      margin-left: 14rem; }
       header .padre-flex section .menu-hamburguesa div h2 {
         font-size: 10pt; }
+        header .padre-flex section .menu-hamburguesa div h2 ul li a {
+          transition: transform .1s; }
+          header .padre-flex section .menu-hamburguesa div h2 ul li a:hover {
+            background-color: #d2c3f5; }
 
 /*estilos de lista redes en el main para destok*/
 main {
@@ -308,14 +323,14 @@ footer {
   /* estilo y posicion imagen flotante Whatsapp */ }
   footer section .copyPrincipal .tamanoCopy {
     color: #ebf1f9;
-    font-size: 20pt; }
+    font-size: 13pt; }
   footer section div .logoWhatsapp {
     position: fixed;
     width: 4%;
     animation-name: nombre;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    top: 50rem;
+    top: 37rem;
     right: 0.5rem;
     width: 5%; }
 
@@ -648,7 +663,7 @@ footer {
       body footer section div .logoWhatsapp {
         top: 40rem;
         right: 1rem;
-        width: 8%;
+        width: 6%;
         animation-name: nombre;
         animation-duration: 2s;
         animation-iteration-count: infinite; }
@@ -728,11 +743,13 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      list-style: none; }
+      list-style: none;
+      position: relative;
+      padding-top: 0; }
       body .mainTarjetas .social ul li a .icon-redes {
         width: 30%;
-        margin-top: 25rem;
-        margin-left: 4rem; } }
+        margin-top: 2rem;
+        margin-left: 4.5rem; } }
 
 /* reset */
 * {

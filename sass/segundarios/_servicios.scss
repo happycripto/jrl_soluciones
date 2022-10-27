@@ -12,11 +12,14 @@ main{
             margin: 2rem;
             width: 700px;
             height: 400px;
+            transition: transform .1s;
+            &:hover{
+                transform: scale(1.1);
+            }
             .tituloServicio1{
-                font-size: 12pt;
-                text-decoration: underline;
+                font-size: 20pt;
                 text-align: right;
-                margin-right: 18rem;
+                margin-right: 7rem;
                 padding-top: 2rem;
             }
             div{
@@ -28,10 +31,15 @@ main{
                     width: 300px;
                     height: 300px;
                     }
-                p{
+                .parrafoConsultoria{
                     padding: 2rem;
-                    font-size: 8pt;
+                    font-size: 10pt;
                     text-align: justify;
+                }
+                .temasServicio{
+                    position: absolute;
+                    margin-top: 18.5rem;
+                    margin-left: 3rem;
                 }
             }
         }
@@ -42,11 +50,14 @@ main{
             margin: 2rem;
             width: 700px;
             height: 400px;
+            transition: transform .1s;
+            &:hover{
+                transform: scale(1.1);
+            }
             .tituloServicio2{
-                font-size: 12pt;
-                text-decoration: underline;
+                font-size: 20pt;
                 text-align: right;
-                margin-right: 18rem;
+                margin-right: 24rem;
                 padding-top: 2rem;
             }
             div{
@@ -60,7 +71,7 @@ main{
                     }
                 p{
                     padding: 2rem;
-                    font-size: 8pt;
+                    font-size: 10pt;
                     text-align: justify;
                 }
             }  
@@ -72,11 +83,14 @@ main{
             margin: 2rem;
             width: 700px;
             height: 400px;
+            transition: transform .1s;
+            &:hover{
+                transform: scale(1.1);
+            }
             .tituloServicio3{
-                font-size: 12pt;
-                text-decoration: underline;
+                font-size: 20pt;
                 text-align: right;
-                margin-right: 18rem;
+                margin-right: 7rem;
                 padding-top: 2rem;
             }
             div{
@@ -90,7 +104,7 @@ main{
                     }
                 p{
                     padding: 2rem;
-                    font-size: 8pt;
+                    font-size: 10pt;
                     text-align: justify;
                 }
             }    
